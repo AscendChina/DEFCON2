@@ -1,0 +1,52 @@
+ScreenWidth = 0
+ScreenHeight = 0
+ScreenWindowed = 0
+ScreenColourDepth = 0
+ScreenRefresh = 0
+ScreenZDepth = 24
+
+SoundLibrary = dsound
+SoundMixFreq = 22050
+SoundMasterVolume = 255
+SoundChannels = 32
+SoundMusicChannels = 8
+SoundHW3D = 0
+SoundSwapStereo = 0
+SoundMemoryUsage = 1
+SoundBufferSize = 512
+SoundDSP = 0
+
+RenderSmoothLines = 1
+RenderBorders = 1
+RenderCityNames = 1
+RenderCountryNames = 0
+RenderWater = 2
+RenderRadiation = 0
+RenderLowDetailWorld = 0
+RenderObjectTrails = 1
+RenderLobbyEffects = 1
+
+NetworkMetaServerPort = 5009
+NetworkServerPort = 5010
+NetworkClientPort = 5011
+NetworkUsePortForwarding = 0
+NetworkTrackSynchronisation = 0
+
+InterfaceTooltips = 1
+InterfacePopupScale = 7.0
+InterfaceSideScrolling = 1
+InterfaceCameraDragging = 1
+InterfacePanicKey = 1
+InterfaceStyle = default.txt
+InterfaceZoomSpeed = 1.0
+InterfaceTextLanguage = english
+
+PlayerName = NewPlayer
+ServerName1 = 
+ServerName2 =
+ServerName3 =
+ServerName4 =
+ServerName5 =
+TutorialCompleted = 0
+RenderNodes = 0
+AmbxEnabled = 0

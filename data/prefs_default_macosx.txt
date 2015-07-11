@@ -1,0 +1,3 @@
+UseOneButtonMouseModifiers = 1
+SoundLibrary = software
+AntiAliasing = 0

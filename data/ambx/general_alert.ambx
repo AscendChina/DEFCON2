@@ -1,0 +1,58 @@
+	
+<ambx>
+	<version> 1.0.0 </version>
+	<retract>
+		<experience> defcon_alert_experience </experience>
+	</retract>
+	<experience> defcon_alert_experience 
+		<exclusive> no </exclusive>
+		<level> high </level>
+		<fragment>defcon_alert_experience_frag
+			<object>defcon_alert
+				<state> </state>
+				<location>N NE NW</location>
+				<when> after +00:00:00.00 and  before +00:00:00.75 then
+				<state>defcon_alert_defcon3 </state>
+				</when>
+				<when> after +00:00:00.75 and  before +00:00:01.50 then
+				<state>defcon_alert_black </state>
+				</when>
+				<when> after +00:00:01.50 and  before +00:00:02.25 then
+				<state>defcon_alert_defcon3 </state>
+				</when>
+				<when> after +00:00:02.25 then
+				<state>defcon_alert_black </state>
+				</when>
+				<start_time>+00:00:00.00</start_time>
+				<end_time>+00:00:03.00</end_time>
+				<importance>medium</importance>
+				<at_end>
+					<retract>
+						<experience> defcon_alert_experience </experience>
+					</retract>
+				</at_end>
+			</object>
+			
+			<object>defcon_alert_invert
+				<state>E W </state>
+				<location>everywhere</location>
+				<when> after +00:00:00.00 and  before +00:00:00.75 then
+				<state>defcon_alert_black </state>
+				</when>
+				<when> after +00:00:00.75 and  before +00:00:01.50 then
+				<state>defcon_alert_defcon3 </state>
+				</when>
+				<when> after +00:00:01.50 and  before +00:00:02.25 then
+				<state>defcon_alert_black </state>
+				</when>
+				<when> after +00:00:02.25 then
+				<state>defcon_alert_defcon3 </state>
+				</when>
+				<start_time>+00:00:00.00</start_time>
+				<end_time>+00:00:03.00</end_time>
+				<importance>medium</importance>
+			</object>
+			
+		</fragment>
+	</experience>
+</ambx> 

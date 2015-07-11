@@ -1,0 +1,1722 @@
+# =============================================================================
+# DEFCON LANGUAGE FILE
+#
+# Format:
+# stringId                  translation
+#
+#
+# A hash at the start of a line indicates a comment
+# StringIDs MUST be left untouched during translation
+#
+# =============================================================================
+
+
+# =============================================================================
+# Name of the language in the language
+# =============================================================================
+
+lang			Deutsch
+
+
+# =============================================================================
+# Interfaces and dialogs
+# =============================================================================
+
+website_main                        http://www.everybody-dies.com
+website_main_retail                 http://www.defconthegame.com
+website_main_retail_uk              http://www.defconvideogame.com
+website_main_retail_multi_language  http://www.everybody-dies.com
+website_buy                         http://store.introversion.co.uk
+website_buy_steam                   steam://store/1520
+website_buy_retail                  http://www.defconthegame.com
+website_buy_retail_uk               http://www.defconvideogame.com
+website_buy_retail_multi_language   http://www.everybody-dies.com
+website_buy_macosx                  http://secure.ambrosiasw.com/add.php?action=add&item=3600
+website_support                     http://www.everybody-dies.com/support/
+website_support_retail              http://www.defconthegame.com/support/
+website_support_retail_uk           http://www.defconvideogame.com/support/
+website_support_retail_multi_language http://www.everybody-dies.com/support/
+website_support_macosx              http://www.ambrosiasw.com/support/
+website_mods                        http://www.everybody-dies.com/mods/
+website_mods_retail                 http://www.defconthegame.com/mods/
+website_mods_retail_uk              http://www.defconvideogame.com/mods/
+website_mods_retail_multi_language  http://www.everybody-dies.com/mods/
+
+dialog_mainmenu			Hauptmenü
+dialog_newgame			Neues Spiel
+dialog_joingame			An Spiel teilnehmen
+dialog_leavegame			Spiel verlassen
+dialog_manual                       Benutzerhandbuch
+dialog_exit			Defcon beenden
+dialog_confirm_exit			Ende bestätigen
+dialog_preparing			Vorbereitung...
+dialog_game_starting			Spiel beginnt...
+dialog_tutorial_starting			Start Tutorial...
+dialog_exit_defcon			Defcon beenden?
+dialog_leave_this_game			Dieses Spiel verlassen?
+dialog_chapter			Kapitel *C
+# C = Chapter
+dialog_tutorial			Tutorial *T
+# T = Tutorial
+dialog_rolling_demo			Demospiel
+dialog_tools			Extras
+dialog_otheroptions			Andere Optionen
+
+dialog_options			Optionen
+dialog_high			Hoch
+dialog_medium			Mittel
+dialog_low			Niedrig
+dialog_enabled			Aktiviert
+dialog_disabled			Deaktiviert
+
+dialog_apply			Anwenden
+dialog_close			Schließen
+dialog_yes			Ja
+dialog_yes_l			Ja 
+dialog_no			Nein
+dialog_no_l			Nein
+dialog_ok			Ok
+dialog_cancel			Abbrechen
+dialog_save			Speichern
+dialog_abort			Abbrechen
+dialog_restore_default			Standard wiederherstellen
+dialog_load			Laden
+
+dialog_increase			Erhöhen
+dialog_decrease			Senken
+
+dialog_time_am			am
+dialog_time_pm			pm
+
+dialog_playername			Spielername
+dialog_teamname			Teamname
+dialog_setplayername			Spielername einstellen
+dialog_setteamname			Teamname einstellen
+
+dialog_graphicsoptions			Grafik
+dialog_smoothlines			Linien glätten
+dialog_borders			Grenzen zeigen
+dialog_citynames			Stadtnamen zeigen
+dialog_countrynames			Ländernamen zeigen
+dialog_messages			Meldungen zeigen
+dialog_water			Wasser zeigen
+dialog_radiation			Verstrahlung zeigen
+dialog_lowdetailworld			Wenige Details auf Welt
+dialog_objecttrails			Objektspuren zeigen
+dialog_lobbyeffects			Lobbyeffekte
+
+dialog_waternormal			Normal
+dialog_watershaded			Schattiert
+
+dialog_soundoptions			Sound
+dialog_unavailable			nicht verfügbar
+dialog_soundlibrary			Sound-Library
+dialog_directsound			DirectSound
+dialog_softwaresound			Software-Sound
+dialog_mixfrequency			Frequenzen mischen
+dialog_11khz			11 kHz Niedrige Qualität
+dialog_22khz			22 kHz Mittlere Qualität
+dialog_44khz			44 kHz Hohe Qualität
+dialog_numchannels			Anz. Kanäle
+dialog_8channels			8 Kanäle
+dialog_16channels			16 Kanäle
+dialog_32channels			32 Kanäle
+dialog_64channels			64 Kanäle
+dialog_memoryusage			Speicherverbrauch
+dialog_swapstereo			Stereo tauschen
+dialog_hw3dsound			Hardware 3D-Sound
+dialog_realtimeeffects			Echtzeiteffekte
+dialog_mastervolume			Master-Lautstärke
+dialog_cpuusage			CPU-Leistung
+dialog_cpuusageunknown			CPU-Leistung unbekannt
+
+dialog_screenoptions			Bildschirm
+dialog_refreshrate			Wiederholungsrate
+dialog_windowed			Fenster
+dialog_windowedmode			 (Fenster-Modus)
+dialog_fullscreen			Ganzer Bildschirm
+dialog_resolution			Auflösung
+dialog_colourdepth			Farbtiefe
+dialog_colourdepth_16			16 bit
+dialog_colourdepth_24			24 bit
+dialog_colourdepth_32			32 bit
+dialog_colourdepth_X			*C Bit
+# C = Color Depth
+dialog_zbufferdepth			Tiefe Z-Puffer
+dialog_refreshrate_X			*R Hz
+# R = Refresh Rate
+dialog_resolution_W_H			*W x *H
+# W = Screen Width, H = Screen Height
+dialog_antialias                    Anti-Aliasing
+
+dialog_networkoptions			Netzwerk
+dialog_networkclientport			Client-Port
+dialog_networkserverport			Server-Port
+dialog_networkmetaserverport			MetaServer-Port
+dialog_networkuseportforwarding			Port-Weiterleitung
+dialog_networktracksync			Sync-Fehler verfolgen
+dialog_networktracksynctooltip			Aktivieren Sie diese Option, um ausführliche Informationen für die Verfolgung von Synchronisierungsfehlern zu sammeln.\nHat starken Einfluss auf die Leistung.
+dialog_networkportforwardtooltip			Aktivieren Sie diese Option, wenn Sie Probleme mit dem Hosting von oder der Verbindung zu Spielen haben.\nSie müssen die Port-Weiterleitung von eingehenden UDP-Daten auf die obigen Ports auf Ihrem NAT manuell aktivieren.
+dialog_networkfailed			Fehler
+dialog_networkfailedgamerunning			Sie können Ihre Netzwerkeinstellungen\nnicht ändern, wenn das Spiel läuft.
+dialog_networksuccess			Erfolg
+dialog_networksuccessfull			Ihre Netzwerkeinstellungen\nwurden aktualisiert.
+dialog_networkporttooltip			Port-Nummer für die Kommunikation. Gültige Port-Nummern sind größer 1024 und kleiner als 65535.\nLegen Sie Port 0 fest, wählt das System einen freien Port für Sie aus.
+dialog_troubleshooting			Probleme? Hilfe zur Problembehebung
+dialog_troubleshooting_tooltip			Klicken Sie hier, um unsere Webseite mit Hilfe für die Diagnose aller das Netzwerk betreffenden Probleme zu besuchen.
+dialog_no_change_while_in_game_1			Sie können Ihre Netzwerkeinstellungen nicht ändern,
+dialog_no_change_while_in_game_2			während ein Spiel läuft
+
+dialog_authoptions			Authentifizierung
+dialog_paste			Kopieren
+dialog_paste_tooltip			Den Schlüssel aus der Zwischenablage kopieren
+dialog_auth_failed			Authentifizierung FEHLGESCHLAGEN
+dialog_bad_key_title			AUTHENTIFIZIERUNG FEHLGESCHLAGEN
+dialog_authkey_not_found			AuthKey nicht gefunden
+dialog_meta_server_details			\n\nBitte besuchen Sie diese URL, um Ihren Key zu aktivieren:\nMETASERVER.INTROVERSION.CO.UK
+dialog_not_permitted_start_game			Sie können kein neues Spiel starten,\nda wir Ihren Schlüssel nicht authentifizieren konnten.\n\nSCHLÜSSEL : *K\nFEHLER: *E\n*M
+# K = Auth Key, E = Error Message, M = Message
+dialog_not_permitted_join_game			Sie können an keinem Spiel teilnehmen,\nda wir Ihren Schlüssel nicht authentifizieren konnten.\n\nSCHLÜSSEL : *K\nFEHLER: *E\n
+# K = Auth Key, E = Error Message
+dialog_auth_error			Authentifizierungsfehler\n*E\n\nKey: *K\n
+# K = Auth Key, E = Error Message
+dialog_type_authkey_or_demo_1			Bitte Authentifizierungsschlüssel eingeben
+dialog_type_authkey_or_demo_2			oder auf Demo spielen klicken
+dialog_auth_status			AUTHENTIFIZIERUNGSSTATUS
+dialog_auth_status_unknown			UNBEKANNT
+dialog_auth_status_checking			PRÜFUNG...
+dialog_auth_status_demo_user			DEMO-BENUTZER
+dialog_may_play_as_demo_user			Sie können als DEMO-SPIELER spielen, wenn Sie möchten.
+dialog_cannot_use_mac_key_on_pc     Sie können eine Mac-Taste in der PC-Version nicht verwenden.
+dialog_cannot_use_pc_key_on_mac     Sie können eine PC-Taste in der Mac-Version nicht verwenden.
+
+dialog_auth_wrong_platform          Falsche Plattform
+dialog_auth_key_dead                Taste tot
+dialog_auth_version_not_found			Version nicht gefunden
+dialog_auth_key_inactive			Schlüssel deaktiviert
+dialog_auth_version_revoked			Version abgewiesen
+dialog_auth_key_not_found			Schlüssel nicht gefunden
+dialog_auth_key_revoked			Schlüssel abgewiesen
+dialog_auth_key_banned			Schlüssel abgewiesen
+dialog_auth_key_invalid			Schlüssel ungültig
+dialog_auth_unknown			Unbekannt
+dialog_auth_accepted			Angenommen
+
+dialog_controloptions			Andere
+dialog_sidescrolling			Blättern Maus
+dialog_zoomspeed                    Zoom-Geschwindigkeit
+dialog_camdragging			Verschieben Kamera
+dialog_tooltips			Infokasten zeigen
+dialog_popupscale			Popup-Größe
+dialog_panickey			Panikschalter
+dialog_language			Sprache
+dialog_restart_required_language			Bitte Defcon neustarten, damit Sprach-\neinstellungen in Kraft treten.
+dialog_keyboardlayout               Tastaturbelegung
+
+dialog_zoomnormal                   Normal
+dialog_zoomslow                     Langsam
+
+dialog_lobby			LOBBY
+dialog_lobby_team_options			Teamoptionen
+dialog_lobby_advanced_options			Erweiterte Optionen
+dialog_rename			Umbenennen
+dialog_territories			Territorien
+dialog_alliance			Allianz
+dialog_requestai			KI-Spieler hinzufügen
+dialog_chat			Chat
+dialog_ready			Bereit
+dialog_gamestart			Spiel startet in *X Sekunden
+# X = Countdown in secondes before the game start
+dialog_gamestart_whenready			Alle Spieler - Zum Start 'BEREIT' klicken
+dialog_gamestart_youready			Zum Start 'BEREIT' klicken
+dialog_kick			Rausschmiss
+dialog_spectate			Zuschauen
+dialog_join_alliance			Bei *A einsteigen
+# A = Alliance Name
+dialog_closed			schließen
+dialog_demo_user			DEMO-BENUTZER
+dialog_number_players_max			Max. *N Spieler
+# N = Number Players Max
+dialog_click_to_open			Zum Öffnen klicken
+dialog_click_to_close			Zum Schließen klicken
+dialog_awaiting_player			Warte auf Spieler
+dialog_cpu_team_name			[CPU] *T
+# T = Team Name
+dialog_joining			[Anmeldung...]
+dialog_demo_team_name			[DEMO] *T
+# T = Team Name
+dialog_demo_too_many_players			Sie können nicht so viele Spieler in Ihrem Spiel haben,\nweil Sie die DEMO spielen.\n\nMöchten Sie am Mehrspieler-Wahnsinn mit sechs Spielern teilnehmen, dann müssen Sie zuerst die Vollversion kaufen.\n\nMax. Größe Demospiel = *N Spieler
+# N = Max Demo Game Size
+dialog_edited			Bearbeitet
+dialog_locked			gesperrt
+dialog_click_select_territory			WÄHLEN SIE IHR TERRITORIUM (*T/*M)
+# T = Number of Territories, M = Maximum number of Territories
+dialog_random_territories			ZUFÄLLIGE TERRITORIEN
+dialog_option_locked_demo_1			Diese Option ist GESPERRT
+dialog_option_locked_demo_2			(DEMO-Spieler).
+dialog_option_locked_game_mode_1			Diese Option ist GESPERRT
+dialog_option_locked_game_mode_2			Aufgrund des aktuellen Spielmodus
+dialog_spectators_number			ZUSCHAUER     (*N MAX)
+# N = Maximum number of Spectators
+dialog_awaiting_spectators			Warte auf Zuschauer...
+dialog_internet_identity			Internetidentität:
+dialog_internet_identity_details			*I : *P
+# I = Ip Address, P = port
+dialog_lan_identity			LAN-Identität:
+dialog_server_identity			Serveridentität:
+dialog_lobby_defcon			DEFCOn
+dialog_created_by_introversion      ENTWICKELT  DURCH  INTROVERSION  SOFTWARE
+dialog_lobby_version			VERSION:
+dialog_lobby_have_latest_version			Sie haben die neueste Version.
+dialog_lobby_newer_version			Eine neue Version ist verfügbar : *V
+# V = Newer Version
+dialog_lobby_click_to_download			Hier zum Download klicken
+dialog_lobby_demo_limitations			DEMOEINSCHRÄNKUNG
+dialog_lobby_max_demo_game_size			Max. Demospielgröße
+dialog_lobby_max_demo_players			Max. Demo-Spieler pro Spiel
+dialog_lobby_demo_servers_permitted			Demo-Server zugelassen
+dialog_lobby_number_players			*P Spieler
+# P = Number of Players
+dialog_lobby_metaserver_time			METASERVER-ZEIT
+dialog_lobby_time_gmt			*H:*M*A (GMT)
+# H = Hours, M = Minutes, A = am/pm
+dialog_lobby_test_hours_start_at			IHRE TESTSTUNDEN STARTEN UM
+dialog_lobby_scheduled_test_hour			GEPLANTE TESTSTUNDE
+dialog_lobby_occurring_now			JETZT STATTFINDEND
+dialog_lobby_next_test_hour_begins			NÄCHSTE SPIELSTUNDE BEGINNT IN
+dialog_lobby_minutes			*M MINUTEN
+# M = Minutes
+dialog_lobby_hours_minutes			*H STUNDEN *M MINUTEN
+# H = Hours, M = Minutes
+dialog_lobby_authentication			AUTHENTIFIZIERUNG . *A
+# A = Authentication Status
+dialog_lobby_client_ident			CLIENT-IDENTITÄT : *I:*P
+# I = Ip Address, P = port
+dialog_lobby_client_ident_unknown			CLIENT-IDENTITÄT : UNBEKANNT
+dialog_lobby_server_ident			SERVERIDENTITÄT : *I:*P
+# I = Ip Address, P = port
+dialog_lobby_server_ident_unknown			SERVERIDENTITÄT : UNBEKANNT
+
+dialog_alliance_0			Rot
+dialog_alliance_1			Grün
+dialog_alliance_2			Blau
+dialog_alliance_3			Gelb
+dialog_alliance_4			Orange
+dialog_alliance_5			Türkis
+
+dialog_alliances			Allianzen
+dialog_declarewar			Feuerpause mit *T beenden?
+dialog_ceasefire			Feuerpause mit *T?
+dialog_ceasefire_title			Waffenstillstand
+dialog_shareradar			Öffentlicher Radar
+dialog_alliance_leave			Ihre Allianz verlassen
+dialog_alliance_kick			Diesen Spieler aus Ihrer Allianz schmeißen
+dialog_alliance_join			Um Beitritt bei dieser Allianz ersuchen
+dialog_shareradarbegin			Ihren Radar mit *T teilen?
+dialog_shareradarend			Ihren Radar nicht mehr mit *T teilen?
+dialog_vote			Abstimmen
+dialog_abstain			Enthalten
+dialog_you_requested_alliance_1			Sie haben beantragt,
+dialog_you_requested_alliance_2			bei der Allianz *A einzusteigen
+# A = Alliance
+dialog_requested_alliance_1			*T hat beantragt
+# T = Team Name
+dialog_requested_alliance_2			in Ihre Allianz aufgenommen zu werden
+dialog_you_requested_kick_1			Sie haben beantragt,
+dialog_you_requested_kick_2			*T auszuschließen
+# T = Team Name
+dialog_requested_kick_1			*T hat beantragt
+# T = Team Name
+dialog_requested_kick_2			*T auszuschließen
+# T = Team Name
+dialog_vote_yes			JA
+dialog_vote_no			NEIN
+dialog_vote_abstain			ENTHALTEN
+dialog_vote_seconds_to_vote			*S Sekunden bis Abstimmung
+# S = Seconds to vote
+dialog_vote_number_votes_required			*V Stimmen erforderlich
+# V = Number of Vote Required
+dialog_vote_succeeded			ERFOLGREICH
+dialog_vote_failed			FEHLER
+dialog_alliance_player			Spieler
+dialog_alliance_receiving			EMPFANG
+dialog_alliance_radar			Radar
+dialog_alliance_sending			Senden
+dialog_alliance_cease			Auflösen
+dialog_alliance_fire			Feuer
+
+dialog_placeunit			Einheit platzieren
+dialog_createfleet			Flotte erstellen
+
+dialog_credits_1			*C Credits
+dialog_credits_2			Verbleibend
+dialog_fleets			Flotten
+dialog_units			Einheiten
+dialog_place_fleet			Flotte platzieren
+
+dialog_paused			PAUSE
+dialog_gameover			SPIELENDE
+dialog_saved_screenshot			/me hat Screenshot gespeichert
+# /me will be replaced by the Team Name
+dialog_steam_authentication_failed			Steam-Authentifizierung FEHLGESCHLAGEN\n\n
+dialog_steam_logged_in_elsewhere			Zur Lösung dieses Problems müssen Sie sich bei Steam neu anmelden.\nBeenden Sie Defcon, klicken Sie auf das Menü Datei in Steam und klicken Sie dann auf „Benutzer wechseln“.\nGeben Sie Ihren Benutzernamen und Kennwort ein, um sich neu anzumelden.\n\n
+dialog_steam_error			Steam-Fehler
+dialog_synchronisation_error			SYNCHRONISATIONSFEHLER
+dialog_connection_problem_seconds			VERBINDUNGSPROBLEM (*S SEK)
+# S = Seconds of Estimated Latency
+dialog_high_latency			Hohe Verzögerung
+dialog_high_packet_loss			Hoher Paketverlust
+dialog_defcon_x_in_x_time			DEFCON *D IN *M:*S
+# D = Defcon level, M = Minutes, S = Seconds
+dialog_time_remaining			*M:*S VERBLEIDEND
+# M = Minutes, S = Seconds
+dialog_autocam			AUTOCAM
+dialog_non_playable_demo			NICHT SPIELBARE DEMO
+dialog_tracking_synchronisation			TRACKINGSYNCHRONISIERUNG
+
+dialog_steam_authentication			Steam-Authentifizierung
+dialog_steam_play_defcon			Defcon spielen
+dialog_steam_auth_status			STEAM-AUTHENTIFIZIERUNGSSTATUS
+dialog_steam_welcome_to_defcon			Willkommen zu Defcon!
+dialog_steam_may_play_demo			Sie können Sie DEMO von Defcon spielen
+dialog_steam_unable_to_auth			Wir konnten Sie nicht authentifizieren.
+dialog_steam_auth_progress			Steam-Authentifizierung : *P
+# P = Steam Authentication Progress
+
+dialog_steam_error_edenysteamvalidationstalled			Fehler bei Prüfung des STEAM UserID Ticket (Server konnte Authentifizierungsserver nicht kontaktieren).\n
+dialog_steam_error_edenynotloggedon			Falsche Steam-Anmeldung
+dialog_steam_error_edenyloggedinelsewhere			An diesem Konto wurde von einem anderen Ort angemeldet.
+dialog_steam_error_edenynolicense			Dieses Steam-Konto besitzt dieses Spiel nicht. \nBitte an korrektes Steam-Konto anmelden.
+dialog_steam_error_edenyinvalidversion			Clientversion inkompatibel mit Server. \nBitte verlassen und neustarten
+dialog_steam_error_edenycheater			Dieses Konto ist gesperrt
+dialog_steam_error_edenyunknowntext			Client hat Server verlassen
+dialog_steam_error_edenyincompatibleanticheat			Sie haben ein externes Werkzeug laufen, das mit den Sicherheitsservern inkompatibel ist.
+dialog_steam_error_edenymemorycorruption			Speicherfehler festgestellt.
+dialog_steam_error_edenyincompatiblesoftware			Sie haben ein Software laufen, die mit den Sicherheitsservern inkompatibel ist.
+dialog_steam_error_edenygeneric			Client hat Server verlassen
+dialog_steam_error_unknown			Unbekannt
+
+dialog_steam_progress_not_started			Nicht gestartet
+dialog_steam_progress_started			Gestartet
+dialog_steam_progress_starting_steam			Starte Steam
+dialog_steam_progress_starting_steam_api			Starte Steam API
+dialog_steam_progress_logging_on_to_steam			Anmeldung bei Steam
+dialog_steam_progress_getting_steam_id			Empfange Steam ID
+dialog_steam_progress_getting_encryption_details			Empfange Verschlüsselung
+dialog_steam_progress_getting_steam2_auth			Empfange Steam2 Auth
+dialog_steam_progress_getting_steam3_auth			Empfange Steam3 Auth
+dialog_steam_progress_requesting_authentication			Authentifizierungsanforderung
+dialog_steam_progress_success			Erfolg
+dialog_steam_progress_success_demo			Erfolg (Demo)
+dialog_steam_progress_failed			Fehler
+
+dialog_warning			Warnung
+
+dialog_enterpassword			Server-Passwort eingeben
+dialog_setpassword			Server-Passwort einrichten (leer für kein Passwort)
+
+dialog_resync_title			Neu synchronisieren
+dialog_resync_button			Neu synchronisieren
+dialog_resync_caption			Ihr Spiel ist nicht mehr synchron mit dem der anderen Spieler.\n\nKlicken Sie auf die Schaltfläche Neu synchronisieren, um diesen Fehler zu beheben.\n\nDies kann mehrere Minuten dauern.
+
+team_unassigned			Nicht zugeordnet
+team_ai			KI-Spieler
+team_local			Lokaler Spieler
+team_remote			Entfernter Spieler
+
+team_name_not_set			[noch nicht benannt]
+
+dialog_metaserver_failedtitle			KONNTE NICHT ZU METASERVER VERBINDEN
+dialog_metaserver_failedconnect			Defcon konnte keine Verbindung zum MetaServer aufbauen.\nSie können deshalb keine Serverlisten erhalten\noder Ihren eigenen Spielserver aufführen.\n\nÜberprüfen Sie Ihre Internetverbindung und deaktivieren Sie\nalle Firewalls und andere Netzwerkhilfen, die gerade laufen.\n\nDefcon benötigt Zugriff auf die folgenden Ports:\n5009 UDP (abgehend)\n5009 UDP (eingehend)\n\nWeitere Hilfe erhalten Sie auf unserer Webseite zur Problembehebung:\nhttp://www.everybody-dies.com/support/
+
+dialog_client_failedtitle			NETZWERKFEHLER
+dialog_client_failedconnect			Defcon konnte keinen Netzwerkempfänger für den Client öffnen.\nSie können deshalb an keinen Spielen teilnehmen\noder eigene Spiele erstellen.\n\nDeaktivieren Sie\nalle Firewalls und andere Netzwerkhilfen, die gerade laufen.\n\nWeitere Hilfe erhalten Sie auf unserer Webseite zur Problembehebung:\n
+
+dialog_server_failedtitle			KONNTE SERVER NICHT STARTEN
+dialog_server_failedconnect			Defcon konnte den Server nicht starten.\nDies liegt daran, dass die erforderlichen Netzwerkverbindungen nicht verfügbar sind.\n\nDeaktivieren Sie\nalle Firewalls und andere Netzwerkhilfen, die gerade laufen.\n\nWeitere Hilfe erhalten Sie auf unserer Webseite zur Problembehebung:\n
+
+dialog_ambxsupport                  AmBX-Unterstützung
+dialog_ambxsupport_tooltip          Aktivieren Sie diese Option nur, wenn AMBX-Hardware installiert ist. Weitere Informationen finden Sie unter www.ambx.com.
+
+dialog_screen_error_title			Bildschirmfehler
+dialog_screen_error_caption			Fehler bei Einstellung der gewünschten Bildschirmauflösung von \n*W x *H, *C Farben, *S.\n\nZurückgesetzt auf Sicherheitseinstellungen\n*w x *h, *c Farben, *s.
+# W = Screen Width, H = Screen Height, C = Color Depth (ie: 24 bit), S = Windowed/Fullscreen
+# The four other are the safe version of their capitalized counterparts (ie: w, h ,c ,s)
+
+dialog_restart_required_title			Neustart erforderlich
+dialog_restart_required_caption			Bitte Defcon neustarten, damit Bildschirm-\neinstellungen in Kraft treten.
+
+dialog_connection_status			Verbindungsstatus
+dialog_abort_current_connection			Aktuellen Verbindungsversuch abbrechen
+dialog_state_disconnected			KEINE VERBINDUNG
+dialog_state_connecting			VERBINDUNGSAUFBAU...
+dialog_state_connected			VERBUNDEN
+dialog_state_attempts			VERSUCHE : *A
+# A = Number of Connection Attempts
+dialog_state_receiving			EMPFANGEN...
+dialog_state_received			EMPFANGEN
+dialog_state_synchronising			SYNCHRONISIERUNG...
+dialog_state_synchronised			SYNCHRONISIERT
+dialog_state_time_remaining			ZEIT ÜBRIG : *M.*S
+# M = Minutes, S = Seconds
+
+dialog_toolbar_units			Einheiten
+dialog_toolbar_allies			Alliierte
+dialog_toolbar_comms			Komm.
+dialog_toolbar_scores			Punkte
+dialog_toolbar_radar			Radar
+dialog_toolbar_people			Menschen
+dialog_toolbar_orders			Befehle
+dialog_toolbar_territory			Territorium
+dialog_toolbar_nukes			Raketen
+dialog_toolbar_white_board			White Board
+dialog_toolbar_info			Info
+
+dialog_mod			Mods
+dialog_mod_commit_title			Lade MODs...
+dialog_mod_commit_mod_path			Einrichtung MOD-Pfad...\n
+dialog_mod_commit_activating_mod			Aktiviere Mod '*N *V'\n
+# N = MOD name, V = version
+dialog_mod_commit_all_mods_off			Alle MODs deaktivieren
+dialog_mod_error			FEHLER
+dialog_mod_no_arrangement_change			Sie können die Einstellung KRITISCHER MODs nicht ändern,\nwährend das Spiel läuft.
+dialog_mod_not_installed			(NICHT INSTALLIERT)
+dialog_mod_active			aktiv
+dialog_mod_clear_all			Alles löschen
+dialog_mod_deactivate			DeAktiviert
+dialog_mod_activate			Aktivieren
+dialog_mod_click_download_mods			Hier zum Download weiterer Mods klicken
+dialog_mod_click_here			Hier klicken
+dialog_mod_move_up			Rauf
+dialog_mod_move_down			Runter
+dialog_mod_no_mod_selected			Kein MOD gewählt
+dialog_mod_screenshot_not_found			Screenshot nicht gefunden
+dialog_mod_install_dir			Verz installieren
+dialog_mod_author			Autor
+dialog_mod_website			Webseite
+dialog_mod_required_all_players			Notwendig für ALLE SPIELER
+dialog_error_mod_path_title			Fehler beim Einstellen des MOD-Pfads
+dialog_error_mod_path_caption			Fehler beim Einstellen des MOD-Pfads.\nAuf diesem Server läuft ein MOD, den Sie nicht installiert haben.\n\nAuf dem Server laufen die folgenen MODs:\n
+
+dialog_demo			Demo
+dialog_welcome_to_demo			WILLKOMMEN ZUR DEMO
+dialog_play_demo			Demo spielen
+dialog_buy_now			Jetzt kaufen
+dialog_buy_now_caps			JETZT KAUFEN
+dialog_exit_game_time			Spiel verlassen (*T)
+# T = Remaining time
+dialog_exit_game			Spiel verlassen
+dialog_welcome_to_demo_defcon			Willkommen zur Demo von Defcon.
+dialog_demo_player_limited			Sie können eine Mehrspieler-Runde erstellen,\nes ist aber auf *P Spieler begrenzt.\nIn der VOLLVERSION können bis zu 6 Spieler teilnehmen.\n\n
+# P = Number of Players
+dialog_demo_player_join_limited			Sie können an einer Mehrspieler-Runde teilnehmen,\naber nur, wenn weniger als *P DEMO-Spieler daran\nbereits teilnehmen
+# P = Number of Players
+dialog_demo_spectate_any_game			\n\nSie können bei jedem Spiel zuschauen.
+
+dialog_server_browser			Server-Browser
+dialog_server_password			Serverkennwort
+dialog_enter_ip_manually			IP manuell eingeben
+dialog_filters			Filter
+dialog_server_details			Server  *I : *P
+# I = Ip Address, P = port
+dialog_server_version_mismatch			Sie können sich an diesem Spieleserver nicht anmelden.\n\nDort läuft eine andere Version als Sie haben\nund die Versionen sind nicht kompatibel.\n\nIhre Version : *V\nVersion auf Server : *T
+# V = Your version, T = Their version
+dialog_cannot_join_server			Kann nicht an Server anmelden
+dialog_no_join_mods_not_installed			Sie können sich an diesem Spieleserver nicht anmelden.\n\nDort laufen MODs, die Sie nicht installiert haben.\nFolgende MODs sind erforderlich:\n\n*R\n\nLaden Sie MODs hier herunter:\n
+# R = Reason
+dialog_no_join_own_game			Sie können sich an diesem Spieleserver nicht anmelden.\n\nDies ist Ihr eigener Spieleserver und Sie sind\nbereits angemeldet.
+dialog_requesting			Anforderung...
+dialog_refresh_number_server			Aktualisierung (*S)
+# S = Number of Servers
+dialog_server_demo_restricted			Dieser Server hat eine DEMOEINSCHRÄNKUNG.\n\nEs sind bereits zu viele Demo-Spieler am Spiel angeschlossen oder das Spiel läuft im erweiterten Spielmodus.\n\nMöchten Sie an einem Spiel dieser Größe teilnehmen, dann müssen Sie die Vollversion des Spiels kaufen.\n\nMax. Demo-Spieler pro Spiel : *N
+# N = Max Demo Game Size
+dialog_number_server_found			*N Server gefunden
+# N = Number Server Found
+dialog_retrieving_server_list			Rufe Serverliste ab...
+dialog_net_location_lan			*I:*P [LAN]
+# I = Ip Address, P = port
+dialog_game_ended			(beendet)
+dialog_demo_game_mode			Demo
+dialog_mod_base_number_more			*M (*N mehr)
+# M = Mod base, N = Number of Remaining Mods
+dialog_server_name_incompatible			*S [INKOMPATIBEL]
+# S = Server Name
+dialog_server_name_mods_required			*S [MODS ERFORDERLICH]
+# S = Server Name
+dialog_server_name_your_server			*S [IHR SERVER]
+# S = Server Name
+dialog_server_name_demo_restricted			*S [DEMOEINSCHRÄNKUNG]
+# S = Server Name
+dialog_server_name_full			*S [VOLL]
+# S = Server Name
+dialog_server_name_not_responding			*S  [REAGIERT NICHT]
+# S = Server Name
+dialog_connected_recently			(Kürzlich verbunden)
+dialog_server_browser_teams			Teams
+dialog_server_browser_specs			Spez
+dialog_server_browser_time			Zeit
+dialog_server_browser_mods			MODs
+dialog_server_browser_game_mode			Spielmodus
+dialog_server_browser_server_name			Servername
+dialog_server_browser_list			Liste
+dialog_filter_all_games			Alle Spiele
+dialog_filter_games_in_lobby			Spiele in Lobby
+dialog_filter_games_in_progress			Laufende Spiele
+dialog_filter_recent_servers			Letzte Server
+dialog_filter_lan_games			LAN-Spiele
+dialog_filter_enter_ip_manually			IP manuell eingeben
+dialog_join			Einsteigen
+dialog_enter_ip			[IP eingeben]
+dialog_connect			Verbinden
+dialog_server_ip			Server-IP
+dialog_server_port			Server-Port
+dialog_single_player_games			Einzelspieler-Runde
+dialog_demo_games			Demospiele
+dialog_default_named_servers			Standardnamenserver
+dialog_show_single_player_games			Einzelspieler-Runden zeigen
+dialog_show_demo_games			Demospiele zeigen
+dialog_show_default_named_games			Spiele mit Standardnamen zeigen
+dialog_server_name			Name
+dialog_server_identity_address			Identität
+dialog_server_game_name			Spiel
+dialog_server_game_mode			Spielmodus
+dialog_server_score_mode			Punktemodus
+dialog_server_started			[gestartet]
+dialog_server_ended			[beendet]
+dialog_server_not_yet_started			[noch nicht gestartet]
+dialog_spectators			Zuschauer
+dialog_server_game_time			Spielzeit
+dialog_server_scores			Punkte
+dialog_retrieving_scores			Rufe Punkte an...
+
+dialog_disconnected			Keine Verbindung
+dialog_disconnect_client_leave			Sie haben das Spiel verlassen
+dialog_disconnect_server_shutdown			Der Server ist heruntergefahren
+dialog_disconnect_invalid_key			Sie verwenden einen ungültigen Schlüssel
+dialog_disconnect_duplicate_key			Sie verwenden ein Schlüsselduplikat
+dialog_disconnect_key_auth_failed			Schlüsselauthentifizierung fehlgeschlagen
+dialog_disconnect_bad_password			Ungültiges Passwort eingegeben
+dialog_disconnect_game_full			Spiel ist bereits voll
+dialog_disconnect_kicked_from_game			Rausschmiss durch Server
+dialog_disconnect_demo_full			Bereits zu viele Demo-Spieler
+dialog_disconnect_unknown			Unbekannt
+
+dialog_chat_public			Öffentlich
+dialog_chat_alliance			Allianz
+dialog_chat_spectators			Zuschauer
+dialog_chat_channel_public			[öffentlich]
+dialog_chat_channel_alliance			[Allianz]
+dialog_chat_channel_spectators			[Zuschauer]
+dialog_chat_channel_private			[privat]
+dialog_chat_channel_to_team_name			[zu *T]
+# T = Team Name
+
+dialog_white_board_draw_erase			Zeichnen
+dialog_white_board_clear_all			Alles löschen
+dialog_white_board_show_all			Alle zeigen
+
+dialog_worldstatus_defcon			DEFCON
+dialog_worldstatus_defcon_x			DEFCON *D
+# D = Defcon level
+dialog_worldstatus_time_remain_hms			Zeit übrig : *Hh *Mm *Ss
+# H = Hours, M = Minutes, S = Seconds
+dialog_worldstatus_time_remain_ms			Zeit übrig : *Mm *Ss
+# M = Minutes, S = Seconds
+dialog_worldstatus_show_stats			Statistiken zeigen
+dialog_worldstatus_scoremode			Punktemodus
+dialog_worldstatus_cpu_team_name			[CPU] *T
+# T = Team Name
+dialog_worldstatus_left_team_name			[VERLASSEN]*T
+# T = Team Name
+dialog_worldstatus_demo_team_name			[DEMO] *T
+# T = Team Name
+dialog_worldstatus_out_of_sync			Nichtsynchron
+dialog_worldstatus_out_of_sync_2			Nicht synchronisiert
+dialog_worldstatus_spectator_join			Zuschauer (Anmeldung...)
+dialog_worldstatus_superpower			Supermacht
+dialog_worldstatus_kills			Kills
+dialog_worldstatus_deaths			Tote
+dialog_worldstatus_survivors			Überlebende
+dialog_worldstatus_collateral			Kollateral
+dialog_worldstatus_nukes			Atomraketen
+dialog_worldstatus_score			PUNKTE
+dialog_worldstatus_points_value			Punktewert:
+dialog_worldstatus_pop_in_millions			*P Mio
+# P = Population in millions
+dialog_worldstatus_classified			[vertraulich]
+dialog_stats			Statistik
+
+dialog_casualties_city			Stadt
+dialog_casualties_strikes			Treffer
+dialog_casualties_deaths			Tote
+dialog_casualties_in_million			*C Millionen
+# C = Casualties in Million
+
+dialog_network_title                Netzwerk
+dialog_network_server_seqid			Server SeqID       *S
+# S = Server sequence
+dialog_network_server_send			Server sendet     *R Kb/s
+# R = Send Rate
+dialog_network_server_receive			Server empfängt     *R Kb/s
+# R = Receive Rate
+dialog_network_id			ID
+dialog_network_ip_port			IP:Port
+dialog_network_seqid			SeqID
+dialog_network_seqid_number			SeqID *S
+# S = Sequence Id
+dialog_network_name			Name
+dialog_network_status			Status
+dialog_network_lost_con			Kontakt verloren...*S s
+# S = Number of seconds since the connection was lost
+dialog_network_synching			Synchronisierung...*P
+# P = Percentage done Synching
+dialog_network_ping			Ping *Pms
+# M = Ping time in miniseconds
+dialog_network_spec			(Spez)
+dialog_network_empty			Leer
+dialog_network_sequence_msg_queue			Meldungen in Warteschlange reihen. Ideal ist 0 oder 1 gefüllt, keine Lücken.
+dialog_network_svr_known_seqid			Bekannte Server     SeqID   *S
+# S = Sequence Id
+dialog_network_svr_estimated_seqid			Server schätzt SeqID   *S
+# S = Sequence Id
+dialog_network_estimated_latency			Geschätzte Verzögerung : *L s
+# L = Estimated Latency
+dialog_network_client_seqid			Client SEQID       *S
+# S = Sequence Id
+dialog_network_client_send			Client sendet     *R Kb/s
+# R = Send Rate
+dialog_network_client_receive			Client empfängt     *R Kb/s
+# R = Receive Rate
+
+dialog_profile_title                Auswerteprogramm
+dialog_profile_toggle_glfinish			glFinish aktivieren
+dialog_profile_reset_history			Verlauf zurücksetzen
+dialog_profile_min			Min
+dialog_profile_avg			Durchschn
+dialog_profile_max			Max
+
+dialog_c2s_team_renamed			*T umbenannt zu *N
+# T = Team Name Old, N = Team Name New
+dialog_c2s_team_joined_game			*T nimmt am Spiel teil
+# T = Team Name
+dialog_c2s_default_name_spectator   Zuschauer
+dialog_c2s_default_name_player      Spieler *T
+# T = Team Id
+
+dialog_world_new_spec_connecting			Ein neuer Zuschauer meldet sich an
+dialog_world_team_left_game			*T hat das Spiel verlassen
+# T = Team Name
+dialog_world_spec_left_game			Zuschauer *T hat das Spiel verlassen
+# T = Team Name
+dialog_world_rejoined			*T IST ZURÜCK
+# T = Team Name
+dialog_world_disconnected			*T KEINE VERBINDUNG
+# T = Team Name
+dialog_world_dropped			*T BEENDET
+# T = Team Name
+dialog_world_kicked			*T RAUSGESCHMISSEN
+# T = Team Name
+
+dialog_mapr_fps			*Ffps
+# F = Frame per seconds (fps)
+dialog_mapr_city_population			BEVÖLKERUNG : *P MILLIONEN
+# P = City Population
+dialog_mapr_city_dead			TOT       : *D MILLIONEN
+# D = City Dead Population
+dialog_mapr_mode			*M MODUS
+# M = Current State
+dialog_mapr_secs			*S SEK
+# S = Seconds
+dialog_mapr_empty			LEER
+dialog_mapr_cancel_all_orders			ALLE BEFEHLE AUFHEBEN
+dialog_mapr_not_before_defcon_x			NICHT VOR DEFCON *D
+# D = Defcon level
+dialog_mapr_defcon_x_required			DEFCON *D ERFORDERLICH
+# D = Defcon level
+dialog_mapr_out_of_range			AUSSER REICHWEITE
+dialog_mapr_combat_range			KAMPFREICHWEITE
+dialog_mapr_fuel_range			TREIBSTOFFREICHWEITE
+dialog_mapr_nukes_in_queue			*N VOR ABSCHUSS
+# N = Number of Nukes
+dialog_mapr_nukes_in_flight			*N IN ANFLUG
+# N = Number of Nukes
+
+dialog_style			Stil
+dialog_style_editor			Style-Editor
+dialog_style_primary			primär
+dialog_style_secondary			sekundär
+dialog_style_red			Rot
+dialog_style_green			Grün
+dialog_style_blue			Blau
+dialog_style_alpha			Alpha
+dialog_style_colour_editor			Farbeditor *I *P
+# I = Real Index, P = Primary (0/1)
+dialog_style_failed_load_style			Fehler beim Laden des Styles\n
+dialog_style_style_saved			Stil gespeichert unter\n
+dialog_style_failed_save_style			Konnte Style nicht laden nach\n
+dialog_style_col_primary			Primär
+dialog_style_col_secondary			Sekundär
+dialog_style_col_horiz			Horiz
+dialog_style_col_ngtive			Negativ
+dialog_style_col_caps			Gross
+dialog_style_col_size			Größe
+dialog_style_col_font			Font
+
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+
+tooltip_timeaccel0			Spiel anhalten
+tooltip_timeaccel1			In Echtzeit spielen
+tooltip_timeaccel2			Beschleunigte Zeit\5x Echtzeit)
+tooltip_timeaccel3			Beschleunigte Zeit\10x Echtzeit)
+tooltip_timeaccel4			Beschleunigte Zeit\20x Echtzeit)
+
+tooltip_worldstatus_x_faster_realtime			*Sx Echtzeit
+# S = Number of time the game speed is faster than Realtime
+tooltip_worldstatus_key_shortcut_0			\nTastenkürzel: 0\n
+tooltip_worldstatus_key_shortcut_1			\nTastenkürzel: 1\n
+tooltip_worldstatus_key_shortcut_2			\nTastenkürzel: 2\n
+tooltip_worldstatus_key_shortcut_3			\nTastenkürzel: 3\n
+tooltip_worldstatus_key_shortcut_4			\nTastenkürzel: 4\n
+tooltip_worldstatus_players_request_speed			Spieler bitten um Geschwindigkeit:
+tooltip_worldstatus_no_team_request_speed			\nKeine
+tooltip_worldstatus_cannot_request_speed			Sie können diese Geschwindigkeit nicht anfordern
+
+tooltip_defcon5			DEFCON 5\nKeine feindlichen Handlungen genehmigt\nFeindeinheiten auf Radar unsichtbar
+tooltip_defcon4			DEFCON 4\nFeindeinheiten werden auf Radar sichtbar
+tooltip_defcon3			DEFCON 3\nSeegefechte genehmigt\nLuftkämpfe genehmigt
+tooltip_defcon2			DEFCON 2
+tooltip_defcon1			DEFCON 1\nAtomeinsatz genehmigt
+
+tooltip_toolbar_whiteboard			White Board aktivieren
+tooltip_toolbar_whiteboard_disabled			White Board ist deaktiviert aufgrund der älteren Version des Host
+tooltip_toolbar_radar			Aktiviere Radarabdeckung
+tooltip_toolbar_pop			Aktiviere Bevölkerungsdichte
+tooltip_toolbar_alliances			Zeige Fenster Allianzen
+tooltip_toolbar_units			Zeige Einheitenwerkzeuge
+tooltip_toolbar_score			Zeige Fenster Punkte
+tooltip_toolbar_comms			Zeige Fenster Kommunikation
+tooltip_toolbar_orders			Aktiviere Befehle
+tooltip_toolbar_info			Zeige Fenster Einheiteninfo
+tooltip_toolbar_territory			Aktiviere Territorien
+tooltip_toolbar_nukes			Zeige Einheiten mit Atomwaffen
+
+tooltip_whiteboard_planning			Zeichnen auf White Board aktivieren. Mit Linksklick zeichnen, mit Rechtsklick löschen.
+tooltip_whiteboard_eraseall			Alles auf dem White Board neu zeichnen.
+tooltip_whiteboard_showall			Aktivieren, um zwischen Anzeige des White Boards der gesamten Allianz und Ihrer eigenen zu wechseln.
+
+tooltip_gameoption_servername			Geben Sie den Namen für Ihren Spiel-Server ein, wie ihn andere Spieler sehen
+tooltip_gameoption_advertiseoninternet			Bei Aktivierung wird Ihr Spiel auf dem MetaServer angeboten und andere Internet-Spieler können an Ihrem Spiel teilnehmen.
+tooltip_gameoption_advertiseonlan			Bei Aktivierung ist Ihr Spiel für andere Spieler auf dem Local Area Network (LAN) sichtbar.
+tooltip_gameoption_maxteams			Die Höchstzahl der Spieler, die an Ihrem Spiel teilnehmen können.
+tooltip_gameoption_territoriesperteam			Die Zahl der Territorien, die jeder Spieler während des Spiels besitzt.
+tooltip_gameoption_citiesperterritory			Die Zahl der Städte, die für jedes von Spielern besessene Territorium erstellt wird
+tooltip_gameoption_populationperterritory			Die Zahl der Menschen (in Millionen) in jedem Territorium.\nStadtbevölkerung wird entsprechend skaliert
+tooltip_gameoption_citypopulations			Steuert die Verteilung Ihrer Bevölkerung über die Städte.\n\n- Standard: Stadbevölkerung basiert auf realen Bevölkerungszahlen\n\n- Angeglichen: Alle Städte in einem Territorium haben die gleiche Bevölkerung\n\n- Zufall: Jede Stadtbevölkerung ist zufällig, die Standardstädte werden jedoch so gewählt, dass Städte in jedem Spiel am gleichen Ort sind\n\n- Vollkommen Zufällig: Jede Stadtbevölkerung ist zufällig, es werden aber zufällige Städte aus der Datenbank gewählt, die Position Ihrer Städte ist also vollkommen zufällig
+tooltip_gameoption_randomterritories			Bei Aktivierung werden Spieler zu Beginn des Spiels zufällig ausgewählten Territorien zugewiesen.\n\nSinnvoll, wenn die Diskussion aufkommt, wer Europa bekommt.
+tooltip_gameoption_maxspectators			Höchstzahl der Spieler, die dem Spiel zuschauen können.\nWarnung: Jeder Zuschauer verbraucht Server-Bandbreite.\n\n0=keine\n100=unbegrenzt.
+tooltip_gameoption_spectatorchatchannel			Kontrollen, wenn Spieler die Chat-Nachrichten der Zuschauer des Spiels lesen können. Sie möchten den Zuschauerkanal vielleicht auf Privat setzen, um zu verhindern, dass Zuschauer Spielern helfen.\n\n- Öffentlich: Alle Spieler können hören, was die Zuschauer sagen. (Standard)\n\n- Privat: Nur Zuschauer können Meldungen im Zuschauerkanal lesen. In diesem Modus ist für Spieler und Zuschauer eine Kommunikation unmöglich.
+tooltip_gameoption_teamswitching			Bei Aktivierung können Spieler während des Spiels mithilfe der Nummerntasten Teams wechseln.\n\nNicht für ernsthafte Spiele zu empfehlen!
+tooltip_gameoption_permitdefection			Bei Aktivierung können Spieler während des Spiels Allianzen wechseln
+tooltip_gameoption_radarsharing			Kontrollen, wenn Spieler mit anderen Spielern ihren Radar teilen.\n\n- Immer aus: Radarteilung nicht erlaubt.\n\n- Allianz: Alliierte tauschen automatisch Radardaten aus. (Standard)\n\n- Gewählt: Jeder Spieler kann das Radar mit jedem anderen Spieler (Alliierte oder nicht) teilen.\n\n- Immer ein: Radarteilung ist für alle aktiviert. Dies ist ein recht praktischer „Anfänger“-Modus, da Sie jederzeit alle Feindeinheiten sehen können.
+tooltip_gameoption_gamespeed			Die Geschwindigkeitseinstellung für dieses Spiel\nLangsamste erbeten verwendet die langsamste von einem Spieler gewählte Geschwindigkeit
+tooltip_gameoption_slowestspeed             Die langsamste Geschwindigkeit für dieses Spiel. Wird Pause gewählt, kann jeder Spieler über die Symbolleiste Spielgeschwindigkeit das Spiel unterbrechen.
+tooltip_gameoption_enableworldevents			Bei Aktivierung kommt es während des Spiels zu Zufallsereignissen
+tooltip_gameoption_gamemode			Steuert die Regeln des Spiels
+tooltip_gameoption_scoremode			Steuert die Punktgewichtung für Tötungen/Tote/Verbleibende Atomwaffen
+tooltip_gameoption_victorytrigger			Bestimmt, wann der Siegzähler startet. Der Wert stellt den Anteil der Gesamtzahl der Atomwaffen dar, die auf die Welt fallen müssen, damit der Siegzähler startet.\n\nz.B.: Liegt der Wert bei 20 (Standard) muss die Gesamtzahl der Atomwaffen unter 20% der Anfangszahl fallen, damit der Siegzähler startet.
+tooltip_gameoption_victorytimer			Sobald der Siegzähler gestartet ist, bleiben soviel Spielminuten, bis das Spiel vollständig endet.
+tooltip_gameoption_maxgamerealtime			Die Höchstzahl von Echtzeit für das Spiel in Minuten.\n\n0 = unbegrenzt Rechzeit verfügbar – das Spiel endet nicht, bis der Siegzähler abgelaufen ist.
+tooltip_gameoption_variableunitcounts			Aktiviert den Guthabenmodus\nJeder Spieler erhält eine bestimmte Geldmenge für ihre Einheiten und kann die eigenen Streitkräfte nach Belieben aufbauen
+tooltip_gameoption_worldscale			HINWEIS: Experimentell.\n\nDurch diese Variable wird die Welt effektiv größer und das Spiel dauert länger.\n\nBei 100 ist die Welt normal groß.\n\nBeim größten Wert (200) hat jedes Team doppelt so viele Einheiten, aber jede Einheit hat nur die halbe Radarreichweite und die halbe Kampfreichweite.\n\nHöchst experimentell.\nErfordert eine leistungsfähige CPU.\nSie sollten die Option Objektspuren zeigen deaktivieren, um den Überblick zu behalten.
+tooltip_gameoption_permitpausing			Bei Aktivierung kann ein Spieler das Spiel unterbrechen
+tooltip_gameoption_serverpassword			Bei Aktivierung können nur die Personen zugreifen, die das Passwort kennen.\n\nLeer lassen, wenn kein Passwortschutz gewünscht ist.
+
+tooltip_gamemode_default			Sammeln Sie Punkte für das Bombardieren feindl. Städte.\nDefcon wird mit der langsamsten angeforderten Geschwindigkeit gespielt.
+tooltip_gamemode_office_mode			Defcon läuft in einem Fenster ohne Ton und in Echtzeit mehr als 6 Stunden lang.\nTaucht der Chef auf, einfach Esc zweimal drücken, um das Fenster zu verstecken.
+tooltip_gamemode_speed_defcon			Defcon läuft mit höchster Geschwindigkeit und dauert nicht mehr als 15 Minuten. Kein Anhalten möglich. Instinktiv und brutal.
+tooltip_gamemode_diplomacy			Alle Spieler starten als Mitglied der Grünen Allianz und teilen Radarbilder. Wie lange bleibt die Allianz bestehen?\nDrei oder mehr menschliche Spieler empfohlen.
+tooltip_gamemode_bigworld			Die Welt ist doppelt so groß! Jeder Spieler hat doppelt so viele Einheiten, aber jede Einheit ist halb so groß und hat halbe Reichweite für Radar und Waffen und ist halb so schnell.\nFür Liebhaber langer Spiele.
+tooltip_gamemode_tournament			Standardregeln, nur können Zuschauer nicht mit Spielern kommunizieren und Spieler werden zufälligen Territorien zugewiesen.
+tooltip_gamemode_custom			Keine speziellen Regeln, alles ist erlaubt.
+
+tooltip_scoremode_default			2 Punkte für jeden getöteten Gegner.\n1 Punkt Abzug für jeden, den Sie nicht schützen können.
+tooltip_scoremode_survivor			1 Punkt für jeden Überlebenden auf Ihrem Territorium. Alle Teams starten mit 100 Punkten, die nur sinken können.
+tooltip_scoremode_genocide			1 Punkt für jeden getöteten Gegner. So einfach wie grausam.
+
+tooltip_defection_no			Lossagung ist nicht erlaubt. Die Allianzen bleiben im ganzen Spiel bestehen.\n\nSie haben automatisch Waffenruhe mit Ihren Alliierten.
+tooltip_defection_yes			Lossagung ist erlaubt. Sie und andere Spieler können jederzeit die Allianz wechseln.\n\nSie können Ihre Waffenruhe mit Ihren Alliierten jederzeit erklären oder aufheben.
+
+tooltip_radarsharing_alwaysoff			Radarteilung ist nicht erlaubt. Sie sehen nur Ihre eigene Radarabdeckung.
+tooltip_radarsharing_alliance			Radarteilung ist zwischen Allianzmitgliedern aktiviert. Dies bedeutet, dass Sie automatisch den Radar mit allen Verbündeten teilen.\n\nHinweis: Alliierte U-Boote sind unsichtbar bis sie auftauchen.
+tooltip_radarsharing_selective			Radarteilung ist möglich. Sie können Ihren Radar mit jedem Spieler teilen (oder auch nicht).
+tooltip_radarsharing_alwayson			Radarteilung ist für alle aktiviert. Sie können alle Einheiten im Spiel sehen.\n\nHinweis: Sie sehen feindliche U-Boote NICHT, wenn sie nicht aufgetaucht sind.
+
+tooltip_ceasefire_enable			Ihre Militäreinheiten stellen sofort das Feuer auf dieses Team ein.\nAlle Atomwaffen, die zu diesem Team unterwegs sind, werden entschärft.
+tooltip_ceasefire_disable			Ihre Militäreinheiten sehen dieses Team als Feind an und eröffnen automatisch das Feuer.
+tooltip_radarshare_enable			Ihre Radarabdeckung wird an Ihr Team gesendet und es sieht alles, was sie sehen.\nHinweis: Ihre U-Boote bleiben unsichtbar, solange sie unter Wasser sind.
+tooltip_radarshare_disable			Sie senden keine Radarabdeckung mehr an dieses Team. Sie können nicht mehr sehen, was Sie sehen.
+
+tooltip_place_silo			Silo platzieren
+tooltip_place_radar			Radarstation platzieren
+tooltip_place_airbase			Luftstützpunkt platzieren
+tooltip_place_battleship			Schlachtschiff zur Flotte
+tooltip_place_sub			U-Boot zur Flotte
+tooltip_place_carrier			Flugzeugträger zur Flotte
+tooltip_place_unit			Einheit hier platzieren
+tooltip_place_fleet			Flotte hier platzieren
+tooltip_fleet_button			Flotte bauen
+tooltip_fleet_remove			Diese Einheit aus Flotte entfernen
+tooltip_fleet_place			Diese Flotte platzieren
+
+tooltip_territory_northamerica			Nordamerika
+tooltip_territory_southamerica			Südamerika
+tooltip_territory_europe			Europa
+tooltip_territory_russia			Russland
+tooltip_territory_southasia			Südasien
+tooltip_territory_africa			Afrika
+
+tooltip_lobby_teamname			Namen für Ihr Team eingeben
+tooltip_lobby_territories			Territorium für Ihr Team wählen
+tooltip_lobby_alliance			Allianz wählen, der Sie beitreten möchten
+tooltip_lobby_requestteam			Team erstellen, als das Sie spielen möchten
+tooltip_lobby_requestai			Vom Computer gesteuertes Team erstellen
+tooltip_lobby_ready			Bereit zum Spiel. Spiel startet, wenn alle Spieler bereit sind
+tooltip_lobby_ready_disable			Spielname ungültig
+tooltip_lobby_chat			Chat-Fenster öffnen
+tooltip_lobby_aggression			Ändert die Aggressivität der KI, 10 ist Maximum\n0 gibt dem Team eine zufällige Aggressivität
+tooltip_lobby_demo_max_player			Sie spielen eine Demo, es können nicht so viele Spieler an Ihrem Spiel teilnehmen.
+tooltip_lobby_click_open_slot			Hier klicken, um diesen Slot zu öffnen, damit mehr Spieler teilnehmen können
+tooltip_lobby_click_close_slot			Hier klicken, um diesen Slot zu schließen und die Anmeldung anderer Spieler zu verhindern
+tooltip_lobby_address_port			IP: *I\nPORT:*P
+# I = IP address, P = Port
+
+tooltip_chat_public			Öffentlicher Kanal. Alle Spieler können hier Meldungen sehen
+tooltip_chat_alliance			Allianz-Kanal. Nur Spieler Ihrer Allianz können hier Meldungen sehen
+tooltip_chat_spectators			Zuschauerkanal. Zuschauer dürfen nur hier Kommentare eingeben.
+
+tooltip_alliance_join			Beitrittsgesuch an diese Allianz schicken
+tooltip_alliance_leave			Diese Allianz verlassen
+tooltip_alliance_kick			Abstimmung zum Ausschluss des Mitglieds aus Allianz starten
+
+tooltip_vote_yes			Mit Ja stimmen
+tooltip_vote_no			Mit Nein stimmen
+tooltip_vote_abstain			Der Stimme enthalten
+
+tooltip_lmb			[LMT]
+tooltip_rmb			[RMT]
+
+tooltip_placeobject			[LMT] EINHEIT PLATZIEREN
+tooltip_placefleet			[LMT] FLOTTE PLATZIEREN
+tooltip_invalidplacement			UNGÜLTIGE PLATZIERUNG
+tooltip_spacetocancel			MIT LEERTASTE ABBRECHEN
+
+tooltip_selectobject			[LMT] EINHEIT WÄHLEN
+tooltip_selectfleet			[LMT] EINHEIT WÄHLEN
+tooltip_setobjectstate			[RMT] EINHEITENSTATUS ÄNDERN
+tooltip_enemyunit			(FEINDEINHEIT)
+tooltip_attack			[LMT] DIESE EINHEIT ANGREIFEN
+tooltip_moveobject			[RMT] EINHEIT HIERHER BEWEGEN
+tooltip_movefleet			[RMT] FLOTTE HIERHER BEWEGEN
+tooltip_cantmovehere			KANN NICHT HIERHER BEWEGEN
+tooltip_spawnfighter			[LMT] JAGDFLIEGER HIERHER STARTEN
+tooltip_spawnbomber			[LMT] BOMBER HIERHER STARTEN
+tooltip_spawnnuke			[LMT] ATOMRAKETE HIERHER STARTEN
+tooltip_spacetodeselect			MIT LEERTASTE EINHEIT DEAKTIVIEREN
+tooltip_landobject			[LMT] JAGDFLIEGER HIER LANDEN
+
+tooltip_controls_sidescrolling			Hiermit können Sie die Kamera mit der Maus am Rand des Bildschirms bewegen
+tooltip_controls_zoomspeed			Stellt die Empfindlichkeit des Zooms über Maus und Trackpad ein
+tooltip_controls_camdragging			Hiermit können Sie die Kamera ziehen, indem Sie die mittlere Maustaste gedrückt halten
+tooltip_controls_keyboardlayout			Ändert Ihre Eingabeart
+
+tooltip_close_window			Fenster schließen
+
+tooltip_demo_exit_the_game			Spiel verlassen
+
+tooltip_server_browser_game_time			Spielzeit:
+tooltip_server_browser_game_has_ended			\nSpiel ist beendet
+tooltip_server_browser_game_started			Gestartet
+tooltip_server_browser_not_yet_started			Noch nicht gestartet
+tooltip_server_browser_teams			\nTeams :
+tooltip_server_browser_spectator			\nZuschauer :
+tooltip_server_browser_game_mode			\nSpielmodus :
+tooltip_server_browser_score_mode			\nPunktemodus :
+tooltip_server_browser_mod			\nMOD:
+tooltip_server_browser_right_click_details			\n(Rechtsklick für Details)
+
+
+# =============================================================================
+# Game Options
+# =============================================================================
+
+gameoption_PlayerName               Spieler
+
+gameoption_ServerName			Servername
+gameoption_New_Game_Server			Neuer Spielserver
+gameoption_AdvertiseOnInternet			Im Internet bewerben
+gameoption_Disabled			Deaktiviert
+gameoption_Enabled			Aktiviert
+gameoption_AdvertiseOnLAN			Im LAN bewerben
+gameoption_GameMode			Spielmodus
+gameoption_Default			Standard
+gameoption_Office_Mode			Büro-Modus
+gameoption_Speed_Defcon			Speed-Defcon
+gameoption_Diplomacy			Diplomatie
+gameoption_BigWorld			Große Welt
+gameoption_Tournament			Turnier
+gameoption_Custom			Benutzerdefiniert
+gameoption_MaxTeams			Max. Teams
+gameoption_TerritoriesPerTeam			Territorien pro Team
+gameoption_CitiesPerTerritory			Städte pro Territorium
+gameoption_PopulationPerTerritory			Menschen pro Territorium
+gameoption_CityPopulations          Stadtbevölkerungen
+gameoption_Equalised                Angeglichen
+gameoption_Random                   Zufall
+gameoption_TotallyRandom            Vollkommen Zufällig
+gameoption_RandomTerritories			Zufällige Territorien
+gameoption_PermitDefection			Überlaufen erlauben
+gameoption_No			Nein
+gameoption_Yes			Ja
+gameoption_RadarSharing			Radarteilung
+gameoption_AlwaysOff			Immer aus
+gameoption_Alliance			Allianz
+gameoption_Selective			Möglich
+gameoption_AlwaysOn			Immer ein
+gameoption_GameSpeed			Spielgeschwindigkeit
+gameoption_Slowest_Requested			Langamste erbeten
+gameoption_Pause			Pause
+gameoption_Real_Time			Echtzeit
+gameoption_5x_Real_Time			5x Echtzeit
+gameoption_10x_Real_Time			10x Echtzeit
+gameoption_20x_Real_Time			20x Echtzeit
+gameoption_SlowestSpeed			Langsamste Geschw.
+gameoption_ScoreMode			Punktemodus
+gameoption_Survivor			Überlebender
+gameoption_Genocide			Genozid
+gameoption_VictoryTrigger			Siegauslöser
+gameoption_VictoryTimer			Siegzähler
+gameoption_MaxGameRealTime			Max. Echtzeit im Spiel
+gameoption_VariableUnitCounts			Variable Einheitenzahl
+gameoption_WorldScale			Weltgröße
+gameoption_MaxSpectators			Max. Zuschauer
+gameoption_SpectatorChatChannel			Zuschauer-Chatkanal
+gameoption_Private			Privat
+gameoption_Public			Öffentlich
+gameoption_TeamSwitching			Teamwechsel
+gameoption_ServerPassword			Serverkennwort
+
+
+# =============================================================================
+# Styles
+# =============================================================================
+
+style_WindowBackground			Fenster-Hintergrund
+style_WindowTitleBar			Fenster-Titelleiste
+style_WindowOuterBorder			Fenster-Außenkante
+style_WindowInnerBorder			Fenster-Innenkante
+style_ButtonBackground			Schalterhintergrund
+style_ButtonHighlighted			Schalter markiert
+style_ButtonClicked			Schalter geklickt
+style_ButtonBorder			Schalterkante
+style_BoxBackground			Boxenhintergrund
+style_BoxBorder			Boxenkante
+style_InputBackground			Eingabehintergrund
+style_InputBorder			Eingabekante
+style_FontWindowTitle			Font-Fenstertitel
+style_FontButton			Fontschalter
+style_WorldCoastlines			Küstenlinien Welt
+style_WorldBorders			Kanten Welt
+style_WorldWater			Wasser Welt
+style_WorldLand			Land Welt
+style_TooltipBackground			Infokasten-Hintergrund
+style_TooltipBorder			Infokastenkante
+style_FontTooltip			Font-Infokasten
+style_PopupBackground			Popup-Hintergrund
+style_PopupTitleBar			Popup-Titelleiste
+style_PopupBorder			Popup-Kante
+style_PopupHighlight			Popup-Markierung
+style_PopupSelection			Popup-Auswahl
+style_FontPopupTitle			Titel Font-Popup
+style_FontPopup			Font-Popup
+
+
+# =============================================================================
+# Unit names
+# =============================================================================
+
+unit_silo			Silo
+unit_nuke			Atomrakete
+unit_city			Stadt
+unit_sub			U-Boot
+unit_radar			Radar
+unit_battleship			Schlachtschiff
+unit_airbase			Luftstützpunkt
+unit_fighter			Jagdflieger
+unit_bomber			Bomber
+unit_carrier			Flugzeugträger
+unit_tornado			Tornado
+unit_saucer			Alien-Raumschiff
+unit_explosion			Explosion
+
+
+# =============================================================================
+# Unit States
+# =============================================================================
+
+state_preparing			VORBEREITUNG AUF
+state_prepare			VORBEREITEN AUF
+state_ready			BEREIT FÜR
+state_fighterlaunch			START DER JAGDFLIEGER
+state_bomberlaunch			START DER BOMBER
+state_attack			ANGRIFF
+state_flight			FLUG
+state_bombernuke			KSR-ABSCHUSS
+state_airtoseamissile			SEEGEFECHT
+state_antisub			ANTI-U-BOOT
+state_ontarget			AUF ZIEL
+state_disarm			ENTWAFFNEN
+state_radar			SCANNEN
+state_silonuke			ICBM-Abschussmodus
+state_airdefense			LUFTABWEHR
+state_passivesonar			PASSIVER SONAR
+state_activesonar			AKTIVER SONAR
+state_subnuke			MSR-ABSCHUSS
+
+
+# =============================================================================
+# Game messages
+# =============================================================================
+
+message_fuel			Kein Treibstoff
+message_tornadodeath			Tornado aufgelöst
+message_nukelaunch			Start festgestellt
+message_multilaunch			Starts festgestellt
+message_firstlaunch			*T-Start festgestellt
+message_incursion			Eindringen in Feindterritorium nicht erlaubt
+message_destroyed			*U zerstört
+# V = victim team, U = destroyed unit, T = attacking team, A = attacking unit
+
+message_directhit			*C getroffen, *D tot
+message_fallout			Fallout auf *C, *D tot
+# C = city name, D = number of deaths
+
+details_fuel			TREIBSTOFF
+
+message_victory			SIEG FÜR *T
+message_stalemate			KEIN KLARER SIEGER
+message_spectators_chat_players			Zuschauer können jetzt mit Spielern chatten
+message_placeunits			SIE MÜSSEN ALLE EINHEITEN VOR DEFCON3 PLATZIEREN
+
+message_fleet_move			Flotte kann nicht hierher bewegt werden
+message_disarmed			Rakete entschärft
+
+message_alliance_join			*P tritt *N Allianz bei
+message_alliance_kicked			*P aus *N Allianz rausgeschmissen
+message_alliance_leave			*P verlässt *N Allianz
+# P = player name, N = alliance name
+
+message_invalid_action			NICHT VOR DEFCON *D
+# D = Defcon level
+
+message_ten_minute_warning			ZEHN MINUTEN VORWARNUNG
+message_victory_timer			SIEGZÄHLER GESTARTET
+
+tray_icon_caption			DEFCON
+tray_icon_ten_minute_warning			Zehn Minuten Vorwarnung
+tray_icon_victory_timer			Siegzähler gestartet
+tray_icon_nuke_launches_detected			Raketenstarts erkannt
+tray_icon_enemy_subs_detected			Feindliche U-Boote entdeckt
+
+
+# =============================================================================
+# Combat Attack Odds
+# =============================================================================
+
+odds_zero			Angriffschance: Null
+odds_vlow			Angriffschance: Sehr gering
+odds_low			Angriffschance: Gering
+odds_med			Angriffschance: Mittel
+odds_high			Angriffschance: Hoch
+odds_vhigh			Angriffschance: Sehr hoch
+
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+unknown			Unbekannt
+
+officemode_1			Büro-Modus übersteuert gewählte Geschwindigkeit,
+officemode_2			Einstellungen und Bildschirmoptionen.
+
+alien_attack			*C durch Alien-Angriff zerstört
+alien_invasion			ALIEN-INVASION!
+tornado_warning			TORNADOWARNUNG
+
+
+# =============================================================================
+# Tutorial
+# =============================================================================
+
+tutorial			Tutorial
+levelselect			Levelauswahl
+tutorial_clicknext			Auf Weiter klicken
+tutorial_restart_mission			Mission neu starten
+tutorial_missioncomplete			MISSION ABGESCHLOSSEN
+tutorial_missionfailed			MISSION FEHLGESCHLAGEN
+tutorial_mission			MISSION *X
+# X = mission number
+tutorial_team_name_cpu			Feindl. CPU
+tutorial_team_name_player			Spieler
+
+tutorial_restart			Neu starten
+tutorial_next			Weiter
+tutorial_chapter_desc			KAPITEL *C von 7   -   *N
+# C = Chapter Number, N = Chapter Name
+tutorial_level			Level *L
+# L = Level Number
+
+tutorial_levelname_1			Atomraketen abschießen
+tutorial_levelname_2			Luftabwehr
+tutorial_levelname_3			Radarabdeckung
+tutorial_levelname_4			Kundschaften und bombardieren
+tutorial_levelname_5			Seeflotten
+tutorial_levelname_6			U-Boote
+tutorial_levelname_7			Weltweiter thermonuklearer Krieg
+
+tutorial_popup			Tutorial-Popup
+tutorial_clicknext_popup			Klicke zum Fortfahren auf Weiter
+
+# ==== MISSION 1 =====
+
+tutorial_start			Willkommen zum Defcon-Tutorial.\n\nIn diesem Tutorial lernen Se alles, was Sie benötigen, um Ihre Streitkräfte effektiv einzusetzen.\n\nKlicken Sie zum Fortfahren auf Weiter.
+tutorial_movecamera			Bevor wir damit anfangen, müssen Sie lernen, Ihre Ansicht zu steuern.\n\nSie verschieben die Ansicht, indem Sie den Mauszeiger an die Seite des Bildschirms bewegen.\n\nSie können auch die Tasten W, A, S, D verwenden, um die Ansicht zu verschieben.
+tutorial_zoomcamera			Drehen Sie das Mausrad, um die Ansicht zu vergrößern oder zu verkleinern.\n\nSie können auch die Tasten Q und E drücken.
+tutorial_movecamera2			Sie können auch die mittlere Maustaste gedrückt halten und de Ansicht verschieben.\n\nKlicken Sie auf Weiter, sobald Sie mit der Ansichtsteuerung vertraut sind und wir fangen damit an, Sachen in die Luft zu sprengen.
+tutorial_silofocus			Dieses markierte Objekt ist ein Raketensilo. Es hat zwei Modi:\n Im ICBM-Abschussmodus kann es Atomraketen auf feindliche Ziele abfeuern.\n Im Luftabwehrmodus schießt es feindliche Raketen und Flugzeuge ab.\nWir brauchen das Silo im ICBM-Abschlussmodus, damit wir die feindlichen Radarstationen da drüben zerstören können.\nRechtsklicken Sie auf das Silo, um es in den ICBM-Abschussmodus zu bringen.
+macosx_tutorial_silofocus			Dieses markierte Objekt ist ein Raketensilo. Es hat zwei Modi:\n\n Im ICBM-Abschussmodus kann es Atomraketen auf feindliche Ziele abfeuern.\n Im Luftabwehrmodus schießt es feindliche Raketen und Flugzeuge ab.\n\nWir brauchen das Silo im ICBM-Abschlussmodus, damit wir die feindlichen Radarstationen da drüben zerstören können.\n\nRechtsklicken Sie auf das Silo, um es in den ICBM-Abschussmodus zu bringen.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_mission1destroyradar			Das Symbol für das Raketensilo wird zu einem Dreieck, wenn es den Abschuss der Raketen vorbereitet.\n\nZerstören Sie mit dem Raketensilo die feindlichen Radarstationen.
+
+tutorial_mission1end			Mission 1 abgeschlossen.\n\nKlicken Sie auf Weiter, um mit Mission 2 fortzufahren.
+tutorial_mission1failed			Sie haben keine Atomraketen mehr zum Zerstören der Ziele und haben die Mission nicht erfüllt.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_silofocus_popup1			Rechtsklicken Sie auf dieses Silo und wechseln Sie in den ICBM-Abschussmodus.
+macosx_tutorial_silofocus_popup1			Rechtsklicken Sie auf dieses Silo und wechseln Sie in den ICBM-Abschussmodus.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_silofocus_selectpopup			Linksklicken Sie auf dieses Silo, um es auszuwählen.
+tutorial_mission1destroyradar_popup			Linksklicken Sie auf diese feindliche Radarstation, um eine Atomrakete darauf abzufeuern.
+#tutorial_mission1deselect_popup			Mit der LEERTASTE deaktivieren Sie diese Einheit.
+tutorial_mission1deselect_popup			LEERTASTE deaktivieren Sie diese Einheit.
+
+# ==== MISSION 2 =====
+
+tutorial_mission2start			Zuerst müssen sie in jedem Spiel bei Defcon Ihre Einheiten setzen.\n\nÖffnen Sie die Einheitenwerkzeuge, um mit der Verteilung zu beginnen.
+tutorial_m2selectsilo			Über diese Werkzeuge können Sie alle Ihre verfügbaren Einheiten setzen. Bei dieser Mission haben Sie nur Silos.\n\nSie müssen alle Einheiten VOR Defcon 3 verteilen.\n\nKlicken Sie auf das Silo-Symbol, um mit der Verteilung der Silos zu beginnen.
+tutorial_m2placesilos			Der grüne Bereich stellt Ihr Territorium dar.\n\nSie können Ihre Einheiten nur in Ihrem eigenen Territorium verteilen und Bodeneinheiten nach Ihrer Platzierung nicht mehr bewegt werden.\n\nBodeneinheiten können nicht zu nahe aneinander stationiert werden.\n\nSetzen Sie Ihre Silos in die Nähe von Städten, um sie zu verteidigen.
+tutorial_m2destroynukes			Feindliche U-Boote haben Atomraketen auf Ihre Städte abgefeuert!\n\nIhre Silos sind bereits im Luftabwehrmodus und schießen die näher kommenden Raketen ab.\n\nSilos im Luftabwehrmodus sind sehr effektiv beim Abschießen von Atomraketen.
+
+tutorial_m2end			Mission 2 abgeschlossen.\n\nKlicken Sie auf Weiter, um mit Mission 3 fortzufahren.
+tutorial_mission2failed			Eine Atomrakete hat eine Ihrer Städte getroffen!\n\nPlatzieren Sie nächstes Mal Ihre Silos in der Nähe von Städten zu platzieren, damit sie mehr Zeit zum Abschießen der Atomraketen haben.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_unitpanel_popup			Klicken Sie auf diesen Schalter, um die Einheitenwerkzeuge zu öffnen.
+tutorial_silo_popup			Klicken Sie auf dieses Einheitensymbol, um mit der Verteilung der Silos zu beginnen.
+tutorial_silo_place			Linksklicken Sie in diesen Bereich, um mit der Verteilung Ihrer Silos bei Ihren Hauptstädten zu beginnen.
+
+# ==== MISSION 3 =====
+
+tutorial_mission3start			Jede Einheit bei Defcon hat eine Radarreichweite und Sie können Feindeinheiten nur sehen, wenn Sie in der Radarabdeckung sind.\n\nIn Russland sind einige Einheiten, die entdeckt werden müssen.\n\nPlatzieren Sie Ihre Radarstationen, um die Feindeinheiten sichtbar zu machen.
+tutorial_m3radarplacement			Platzieren Sie Ihre Radarstationen so nahe wie möglich bei Russland.\n\nBeim Platzieren der Radarstationen erkennen Sie, dass Ihre Sichtweite im Gebiet sich vergrößert und mehr Feindeinheiten sichtbar zu machen.
+tutorial_m3siloplacement			Sie sehen jetzt die Feindeinheiten.\n\nPlatzieren Sie einige Ihrer Silos in Ihrem Territorium, um den Feind zu zerstören.
+tutorial_m3gamespeed			Wir müssen Atomwaffen einsetzen, um die feindlichen Gebäude zu zerstören, Aber das geht erst ab Defcon 1.\n\nBeschleunigen Sie die Zeit, um Defcon 1 zu erreichen. Klicken Sie auf die Geschwindigkeitsschalter, um die Zeit zu beschleunigen, bis Defcon 1 erklärt wird.
+tutorial_m3defcon1			Viele Einheiten können keine Kampfhandlungen starten, bis eine bestimmte Defcon-Stufe erreicht ist.\n\nSee- und Luftkämpfe nicht vor Defcon 3 stattfinden.\n\nATOMWAFFEN KÖNNEN ERST NACH ERKLÄRUNG VON DEFCON 1 EINGESETZT\nWERDEN.\n\nBeschleunigen Sie die Zeit, bis Defcon 1 erreicht ist.
+tutorial_m3destroyenemy			Sie können jetzt mit dem Silo feindliche Gebäude angreifen.\n\nDer Feind hat ein eigenes Silo im Luftabwehrmodus, das viele Ihrer Einheiten abschießen wird. Außerdem besonders gegen Atomangriffe geschützt und hält drei direkte Treffer aus.\n\nSie müssen gleichzeitig mit allen Ihren Silos auf das Feindsilo schießen, damit Sie Erfolg haben.
+tutorial_m3silostaketime			Silos brauchen eventuell lange zum Wechsel vom Luftabwehr- in den ICBM-Modus. Halten Sie den Mauszeiger über ein Silo, um zu sehen, wie lange Sie warten müssen.\n\nBeschleunigen Sie bei Bedarf einfach die Zeit.\n\nFeuern Sie weiter alle Ihre Atomraketen auf feindliche Gebäude, bis sie zerstört sind.
+
+tutorial_m3end			Mission 3 abgeschlossen.\n\nKlicken Sie auf Weiter, um mit Mission 4 fortzufahren.
+tutorial_mission3failed1			Sie haben alle Ihre Radarstationen platziert, aber haben nicht alle Feindeinheiten sichtbar gemacht.\n\nDie Mission ist fehlgeschlagen.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+tutorial_mission3failed2			Sie haben keine Atomraketen mehr und nicht alle feindlichen Gebäude zerstört.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_radar_popup			Klicken Sie auf dieses Einheitensymbol, um mit der Verteilung der Radarstationen zu beginnen.
+tutorial_radar_place			Linksklicken Sie in diesen Bereich, um Ihre Radarstationen in der Nähe vom Feindgebiet zu platzieren.
+tutorial_acceltime_popup			Klicken Sie auf die Geschwindigkeitsschalter, um die Zeit bis Defcon 1 zu beschleunigen.
+tutorial_silosnuke_popup			Rechtsklicken Sie auf dieses Silo und wechseln Sie in den ICBM-Abschussmodus.
+macosx_tutorial_silosnuke_popup			Rechtsklicken Sie auf dieses Silo und wechseln Sie in den ICBM-Abschussmodus.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_nukenemeysilo_popup			Linksklicken Sie wiederholt auf dieses Silo, um viele Raketenabschüsse darauf zu planen. Es wird viele Ihrer Atomraketen abschießen und kann drei direkte Treffer ab.
+tutorial_nukeenemyairbase_popup			Schießen Sie einige Raketen auf diesen feindlichen Luftstützpunkt ab.
+tutorial_nukenemeycities_popup			Verwenden Sie die restlichen Atomraketen ruhig, um die Zivilbevölkerung des Feindes zu bombardieren.
+
+# ==== MISSION 4 =====
+
+tutorial_mission4start			In vielen Fällen sind die Feindeinheiten außer Reichweite Ihres Radars. Um diese Feindeinheiten sichtbar zu machen, senden Sie Aufklärer über das Feindterritorium.\n\nPlatzieren Sie einige Luftstützpunkte in Ihrem Territorium.
+tutorial_m4launchfighters			Mit Luftstützpunkten können Sie zwei Arten von Flugzeugen einsetzen:\n-Kampfflugzeuge: Kurzstrecken-Kampf-/Aufklärungsflugzeuge\n-Bomber: Langstreckenflugzeuge mit einer Atombombe\n\Kampfflugzeuge sind schnelle Kurzstreckenflugzeuge. Sie können hervorragend andere Flugzeuge abschießen und sind gute Aufklärer.\n\nSchicken Sie Ihre Kampfflieger in das Feindterritorium, um nach Zielen zu suchen.
+tutorial_m4radar			Jedes Kampfflugzeug hat einen Kurzstreckenradar, der Feindgebäude sichtbar macht, wenn er nahe genug heranfliegt.\n\nSchalten Sie Ihre Radaransicht an, um Ihre Radarabdeckung zu sehen.
+tutorial_m4launchbombers			Ihre Kampfflugzeuge können all Feindgebäude sichtbar machen.\n\nDie Feindgebäude werden ausgegraut, wenn Sie nicht mehr in der Radarabdeckung sind, dies wird als Radargeist bezeichnet.\n\nJetzt setzen wir Bomber ein, um Atombomben auf diese Feindgebäude\nzu werfen.\n\nStarten Sie von Ihren Luftstützpunkten Bomber zu den Feindgebäuden.
+tutorial_m4bomberinfo			Bomber können lange Strecken zurücklegen, müssen aber nahe an Ihre Ziele herankommen, da sie nur eine einzelne Kurzstreckenbombe mitführen.\n\nBomber werfen Ihre Bomben automatisch ab, wenn sie nahe genug am Ziel sind.
+tutorial_m4nukeslaunched			Sobald ein Bomber seine Bombe abgeworfen hat, kehrt er automatisch zum nächsten Luftwaffenstützpunkt zurück.\n\nNach der Landung wird ein Bomber mit einer neuen Bombe bewaffnet, Stützpunkte verfügen aber nur eine bestimmte Anzahl von Bomben, mit denen Bomber wiederbewaffnet werden können.\n\nWenn Sie einen Stützpunkt markieren (halten Sie den Mauszeiger darüber), zeigen Sie an, wie viele Flugzeuge und Bomben zur Verfügung stehen.
+
+tutorial_m4end			Mission 4 abgeschlossen.\n\nKlicken Sie auf Weiter, um mit Mission 5 fortzufahren.
+tutorial_mission4failed			Sie haben keine Atomraketen mehr zum Zerstören des Feindes und haben die Mission nicht erfüllt.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_selectairbase_popup			Klicken Sie auf dieses Einheitensymbol, um mit der Verteilung der Luftstützpunkte zu beginnen.
+tutorial_placeairbase_popup			Linksklicken Sie in diesen Bereich, um mit der Verteilung Ihrer Luftstützpunkte zu beginnen.
+tutorial_clickairbase_popup			Linksklicken Sie auf diesen Luftstützpunkt, um Kampfflugzeuge zu starten.
+tutorial_scouthere_popup			Linksklicken Sie wiederholt in diesen Bereich, um viele Flugzeugstarts darauf zu planen.
+tutorial_radartoolbar_popup			Markieren Sie diesen Symbolleistenschalter, um Ihre Radarabdeckung zu zeigen.
+tutorial_switchtobombers_popup			Rechtsklicken Sie auf diesen Luftstützpunkt und wechseln Sie in den Bomber-Modus.
+macosx_tutorial_switchtobombers_popup       			Rechtsklicken Sie auf diesen Luftstützpunkt und wechseln Sie in den Bomber-Modus.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_clickairbasebomber_popup			Linksklicken Sie auf diesen Luftstützpunkt, um Bomber zu starten.
+tutorial_nukebuilding_popup			Starten Sie einige Bomber in Richtung dieses Feindgebäudes.
+
+# ==== MISSION 5 =====
+
+tutorial_mission5start			Viele Ihrer mobilen Einheiten bestehen aus Schiffen, die in Flotten zusammengefasst sind.\n\nEine Flotte besteht aus bis zu sechs Schiffen und fährt und kämpft als geschlossene Einheit.\n\nÖffnen Sie das Einheitenwerkzeug und klicken Sie auf die Schaltfläche Flotte, um mit dem Platzieren einer Flotte zu beginnen.
+tutorial_m5createfleet			Dies ist der Flottenbauer. Klicken Sie auf den Einheitenschalter, um dieses Schiff zur Flotte hinzuzufügen.\n-Schlachtschiffe sind wirkungsvoll gegen verschiedene Feindeinheiten, können aber gegen U-Boote in Bedrängnis geraten.\n-Flugzeugträger sind mobile Luftstützpunkte von denen Kampfflugzeuge und Bomber starten können. Die können auch U-Boote unter Wasser entdecken.\n-U-Boote sind für konventionellen Radar unsichtbar und tragen atomare Mittelstreckenraketen.\nBauen Sie eine Flotte aus sechs Schiffen, jeweils drei Schlachtschiffe und drei Flugzeugträger.
+tutorial_m5battleshipinfo			Flotten werden als einzelne Einheit gesteuert. Wird ein Marschbefehl gegeben, bewegen Sie sich zusammen. Erhalten Sie einen Angriffsbefehl, greifen Sie die Feindflotte so gut wie möglich als einzelne Einheit an.\n\nWählen Sie eine Ihrer Flotten aus, indem Sie auf ein beliebiges Schiff in der Flotte linksklicken.\n\nBewegen Sie dann die Flotte südlich, indem Sie auf Ihr Ziel rechtsklicken.
+macosx_tutorial_m5battleshipinfo			Flotten werden als einzelne Einheit gesteuert. Wird ein Marschbefehl gegeben, bewegen Sie sich zusammen. Erhalten Sie einen Angriffsbefehl, greifen Sie die Feindflotte so gut wie möglich als einzelne Einheit an.\n\nWählen Sie eine Ihrer Flotten aus, indem Sie auf ein beliebiges Schiff in der Flotte linksklicken.\n\nBewegen Sie dann die Flotte südlich, indem Sie auf Ihr Ziel rechtsklicken (oder durch Strg-Klick).
+tutorial_m5destroyenemy			Irgendwo im Atlantik sind zwei Feindflotten, finden und zerstören Sie sie mit Ihren Flotten.\n\n- Linksklicken Sie auf ein Schiff, um die gesamte Flotte auszuwählen.\n\n- Rechtsklicken Sie, um das Ziel für eine gewählte Flotte festzulegen.\n\nBeschleunigen Sie bei Bedarf die Zeit.
+macosx_tutorial_m5destroyenemy			Irgendwo im Atlantik sind zwei Feindflotten, finden und zerstören Sie sie mit Ihren Flotten.\n\n- Linksklicken Sie auf ein Schiff, um die gesamte Flotte auszuwählen.\n\n- Rechtsklicken Sie (oder durch Strg-Klick), um das Ziel für eine gewählte Flotte festzulegen.\n\nBeschleunigen Sie bei Bedarf die Zeit.
+tutorial_m5destroyenemy2			Ihre Flotten greifen feindliche Schiffe automatisch an, wenn sie in Reichweite gelangen. Schlachtschiffe eröffnen das Feuer und Flugzeugträger schicken Kampfflugzeuge.\n\nSie können auch den Kampf manuell steuern, linksklicken Sie zum Beispiel auf einen Flugzeugträger, um ihn auszuwählen, und linksklicken Sie dann auf ein feindliches Schiff, um es mit Flugzeugen anzugreifen.\n\nMarkieren Sie den Schalter Befehle in der Werkzeugleiste, um die aktuellen Angriffsbefehle Ihrer Flotte anzuzeigen.
+
+tutorial_m5end			Mission 5 abgeschlossen. Klicken Sie auf Weiter, um mit Mission 6 fortzufahren.
+tutorial_mission5failed			Sie haben alle Ihre Schiffe verloren, ohne den Feind zu zerstören und haben die Mission nicht erfüllt.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_selectfleet_popup			Klicken Sie auf dieses Symbol, um mit der Verteilung der Flotten zu beginnen.
+tutorial_addbattleship_popup			Klicken Sie auf dieses Einheitensymbol, um ein Schlachtschiff zur Flotte hinzuzufügen.
+tutorial_addcarrier_popup			Klicken Sie auf dieses Einheitensymbol, um einen Flugzeugträger zur Flotte hinzuzufügen.
+tutorial_deployfleet_popup			Linksklicken Sie, um Ihre Flotte in diesem Bereich zu platzieren.
+tutorial_selectdeployedfleet_popup			Linksklicken Sie auf ein Schiff, um die gesamte Flotte auszuwählen.
+tutorial_movefleet_popup			RECHTSKLICKEN Sie, um Ihre gesamte gewählte Flotte hierher zu bewegen.
+macosx_tutorial_movefleet_popup			RECHTSKLICKEN Sie, um Ihre gesamte gewählte Flotte hierher zu bewegen.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_destroyfleet_popup			Zerstören Sie die Feindflotte in diesem Gebiet.
+tutorial_orderstoolbar_popup			Markieren Sie diesen Symbolleistenschalter, um Ihre Befehle zu zeigen.
+
+# ==== MISSION 6 =====
+
+tutorial_mission6start			Bis jetzt haben wir in Europa agiert und hatten die Sowjetunion als Feind. Dies ist aber nicht immer der Fall.\n\nIn dieser Mission ist Nordamerika Ihr Territorium und der Feind ist Südasien.\n\nMarkieren Sie den Schalter Territorium, um zu sehen, wer welches Gebiet kontrolliert.
+tutorial_mission6subintro			In diesem Fall ist der der Pazifik der Schauplatz der Hauptkämpfe. Der Feind hat eine Reihe Atom-U-Boote vor der Westküste Amerikas postiert. Von dort aus kann er viele Ihrer Großstädte bombardieren.\n\nDie beste Waffe gegen U-Boote sind Flugzeugträger, denn sie können diese mit dem Sonar finden und mit Wasserbomben versenken.\n\nStationieren Sie eine Flotte Flugzeugträger vor Ihrer Westküste.
+tutorial_mission6placesubs			Wir werden außerdem mit unsere eigenen U-Booten die Ostküste Chinas in Schutt und Asche legen.\n\nBauen Sie eine U-Boot-Flotte und platzieren Sie diese so nahe wie möglich an Ostchina.
+tutorial_m6subinfo			U-Boote sind mit vielen Mittelstreckenraketen ausgestattet.\n\nAußerdem tauchen sie nicht auf dem Radar auf, bis sie auftauchen, wodurch sie unsichtbar sind und mit normalen Waffen nicht angegriffen werden können.\n\nBewegen Sie Ihre U-Boote ganz nahe an die Küste des Feindes und sammeln Sie ein paar MegaTote ein.
+tutorial_m6destroysubs			Vor der Westküste Amerikas befinden sich zwei Feindflotten.\n\nGehen Sie mit einigen Flugzeugträgern in den Anti-U-Boot-Modus und zerblasen Sie die feindlichen U-Boote mit Wasserbomben.\n\nIhre Flugzeugträger haben unendlich viele Wasserbomben.\n\nBeschleunigen Sie bei Bedarf die Zeit.
+tutorial_m6movesubs			U-Boote können vernichtende Wirkung zeigen, da sie zur feindlichen Küste heranschleichen und mit wenig oder keiner Vorwarnung zuschlagen können.\n\nBewegen Sie Ihre U-Boote in Reichweite von Ostchina.
+tutorial_m6enemylaunch			Der Feind hat von seinen Silos aus Raketen auf unsere Städte abgeschossen.\n\nWir werden mit unseren U-Booten in der Nähe seine Bodensilos vernichten, bevor zu viel Schaden anrichten können.\n\nWechseln Sie Ihre U-Boote in den MSR-Abschussmodus und zerstören\nSie die feindlichen Silos!
+tutorial_m6launchexplanation			Wir haben hier zwar keine Radarabdeckung, wir können aber trotzdem die Feindsilos sehen.\n\nDenn Silos geben mit dem Abschuss von Raketen jedem Ihre Position preis.\n\nSilos im Abschussmodus können sich nicht verteidigen, dies ist also die perfekte Gelegenheit.\n\nSobald seine Silos zerstört sind, ist er schutzlos und wir können im Gegenschlag die Städte anvisieren und richtigen Schaden verursachen!
+tutorial_m6end			Mission 6 abgeschlossen. Klicken Sie auf Weiter, um zur letzten Trainingsmission zu gelangen.
+
+tutorial_territorytoolbar_popup			Markieren Sie diesen Symbolleistenschalter, um die Territorien jedes Spielers zu zeigen.
+tutorial_addsub_popup			Klicken Sie auf dieses Einheitensymbol, um ein U-Boot zur Flotte hinzuzufügen.
+tutorial_movesubs_popup			RECHTSKLICKEN Sie hier, um Ihre U-Boote in Reichweite von Ostchina zu bewegen.
+macosx_tutorial_movesubs_popup			RECHTSKLICKEN Sie hier, um Ihre U-Boote in Reichweite von Ostchina zu bewegen.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_switchtodepth_popup			Rechtsklicken Sie auf diesen Flugzeugträger und wechseln Sie in den Anti-U-Boot-Modus.
+macosx_tutorial_switchtodepth_popup			Rechtsklicken Sie auf diesen Flugzeugträger und wechseln Sie in den Anti-U-Boot-Modus.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_destroysubs_popup			Bewegen Sie Ihre Flugzeugträger und zerstören Sie die feindlichen U-Boote in diesem Gebiet.
+tutorial_substonuke_popup			Rechtsklicken Sie auf dieses U-Boot und wechseln Sie in den KSR-Abschussmodus.
+macosx_tutorial_substonuke_popup			Rechtsklicken Sie auf dieses U-Boot und wechseln Sie in den KSR-Abschussmodus.\n(Strg-Klick bei Maus mit einer Taste)
+tutorial_nukesilo_popup			Linksklicken Sie wiederholt auf dieses Silo, um von Ihren U-Booten Raketen darauf abzuschießen.
+
+
+# ==== MISSION 7 =====
+
+tutorial_mission7start			Dies ist Ihre letzte Trainingsmission. Sie müssen in einem echten Kampf gegen eine KI alles einsetzen, was Sie gelernt haben.\n\nUm zu gewinnen, müssen Sie mehr Punkte machen als der Feind, indem Sie dessen Städte bombardieren. Sie bekommen 2 Punkte für jeden getöteten Fein, verlieren aber 1 Punkt für jeden Ihrer Zivilisten, der stirbt.\n\nIn diesem Spiel sind Sie Nordamerika und der Feind ist Südasien.
+tutorial_mission7enemyattack			Der Feind feuert seine Raketen auf Sie ab!\n\nHaben Sie U-Boote oder Flugzeugträger vor der Küste Chinas, dann zerstören Sie mit ihnen die Feindsilos, solange sie schutzlos sind.\n\nLassen Sie Ihre Bodensilos im Luftabwehrmodus, um die Raketen abzuschießen.
+tutorial_mission7retaliate			Der Feind hat jetzt die meisten seiner Raketen abgeschossen.\n\nBenutzen Sie Ihre Bodensilos und verbleibenden Atomraketen für einen umfassenden Gegenschlag gegen die Städte des Feindes in China!
+tutorial_m7victory			Glückwunsch! Sie haben erfolgreich den KI-Gegner geschlagen und das Defcon Tutorial abgeschlossen!
+tutorial_mission7failed			Sie wurden von der KI geschlagen und haben die Mission nicht erfüllt.\n\nTipps:\n-Bringen Sie Ihre U-Boote direkt an die Küste des Feindes, damit Sie seine Silos zerstören können, bevor zu viele Raketen abgeschossen wurden.\nFinden und zerstören Sie mit Ihren Flugzeugträgern die feindlichen U-Boote, bevor Sie angreifen können.\n\nKlicken Sie auf Mission neu starten, um es noch einmal zu versuchen.
+
+tutorial_showterritory_popup			Markieren Sie diesen Schalter, um Position Ihrer Feinde zu zeigen.
+tutorial_m7placeradar_popup			Der Feind wird von der Ostküste Chinas kommen. Stationieren Sie Ihr Radar entlang der Westküste, um eine maximale Abdeckung zu erreichen.
+tutorial_m7placesilos_popup			Stationieren Sie Ihre Silos zur Verteidigung Ihrer großen Städte, sie sind die Hauptziele des Feindes.
+tutorial_m7placeairbases_popup			Stationieren Sie Ihre Luftstützpunkte entlang der Westküste von Amerika. Mit ihnen greifen wir Schiffe an, die unsere Küste erreichen, und zerstören sie.
+tutorial_placefleetspacific_popup			Der Feind wird Schiffe über den Atlantik schicken, um uns anzugreifen. Sie sollten den Hauptteil Ihrer Flotten im Pazifik stationieren, um sie abzufangen.
+tutorial_m7fleettarget_popup			Bringen Sie Ihre Flotten vor die Ostküste Chinas, um auf kurze Entfernung zuzuschlagen.\n\nLINKSKLICKEN, um eine ganze Flotte auszuwählen.\n\nRECHTSKLICKEN, um eine ganze Flotte zu bewegen.
+macosx_tutorial_m7fleettarget_popup			Bringen Sie Ihre Flotten vor die Ostküste Chinas, um auf kurze Entfernung zuzuschlagen.\nLINKSKLICKEN, um eine ganze Flotte auszuwählen.\nRECHTSKLICKEN (oder durch Strg-Klick), um eine ganze Flotte zu bewegen.
+tutorial_m7scoutchina_popuup			Starten Sie Flugzeuge von Ihren Flugzeugträgern in der Nähe, um das Gebiet nach feindlichen Bodenanlagen abzusuchen.
+tutorial_m7enemysubs_popup			Feindliche U-Boote schießen Raketen auf Ihre Städte ab! Starten Sie Kampfflugzeuge und Bomber von Ihren Luftstützpunkten in der Nähe, um sie zu zerstören!
+
+
+# =============================================================================
+# Unit Info
+# =============================================================================
+
+unitinfo_title			EINHEITENINFO
+unitinfo_title2			(keine Einheit gewählt)
+
+unitinfo_fighter			Schnelle Kurzstrecken-Kampfflugzeuge.\n+ Effektiv gegen Bomber\n+ Gute Aufklärer\n- Können leicht von Schlachtschiffen und Silos zerstört werden
+unitinfo_silo			Dienen als Raketenabschuss- und Luftabwehrbasen.\n+ Großer Vorrat an Langstreckenraketen\n+ Starke Luftabwehrgeschütze\n+ Verstärkt gegen Atomangriffe\n- Raketenabschuss verrät allen Position\n- Langsame Wechselzeiten
+unitinfo_radar			Bietet Radarabdeckung für Ihr Territorium.\n+ Längste verfügbare Radarreichweite\n- Kann leicht durch Atomwaffen zerstört werden
+unitinfo_bomber			Vielseitiges Langstreckenflugzeug.\n+ Trägt einzelne Kurzstreckenrakete\n+ Raketenstart erscheint nicht auf Feindradar\n+ Effektiv gegen Schiffe\n- Kann einfach von Kampfflugzeugen abgeschossen werden\n- Langsam
+unitinfo_battleship			Leistungsstarkes Kanonenboot mit starken Schnellfeuerwaffen\n+ Effektiv gegen viele Ziele\n- Verwundbar gegenüber U-Booten und Bombern
+unitinfo_sub			Mächtige Tarneinheit mit Atomraketen.\n+ Unsichtbar auf konventionellem Radar\n+ Große Menge Mittelstreckenraketen\n+ Sehr verwundbar , wenn aufgetaucht\n- Raketenabschuss verrät allen Position\n- Keine Radarreichweite
+unitinfo_carrier			Mobile Trägereinheit für Flugzeuge.\n+ Kann Kampfflugzeuge und Bomber starten\n+ Kann Wasserbomben gegen U-Boote abwerfen\n- Kann sich nicht direkt selbst verteidigen
+unitinfo_nuke			Leistungsfähiger atomarer Sprengkopf\n+ Unglaubliche Zerstörungskraft\n- Verwundbar gegen Luftabwehrfeuer
+unitinfo_airbase			Abschusspunkt für Kampfflugzeuge und Bomber\n+ Viele Bomber\n+ Regeneriert nach und nach Kampfflugzeuge\n- Leicht durch Atomrakete zerstört
+
+
+# =============================================================================
+# Demo screen
+# =============================================================================
+
+demo_top1                           Kaufen Sie jetzt das Spiel, um Defcon richtig zu erleben
+demo_middle1                        Keine Spielerbegrenzung: Umfassender Genozid mit sechs Spielern!
+demo_middle2                        Alternative Spielmodi:
+demo_middle3                        Büro-Modus: Spielen Sie Defcon in Echtzeit den ganzen Tag lang
+demo_middle4                        Speed-Defcon: Das Ende ist nach 15 Minuten da – instinktiv und brutal
+demo_middle5                        Diplomatie: Alle Spieler beginnen in der selben Allianz
+demo_middle6                        Big World: Die Welt ist doppelt so groß - für Liebhaber langer Spiele
+demo_bottom1                        Sofortige Aktivierung für nur
+demo_bottom2                        £10     $17,50     €14
+
+demo_bottom1_steam                  Sofortige Aktivierung für nur
+demo_bottom2_steam                  $14,95
+
+demo_bottom1_retail                 KAUFEN SIE DIE NOCH HEUTE DIE VOLLVERSION VON DEFCON
+demo_bottom2_retail                 BESUCHEN SIE IHREN LIEBLINGSHÄNDLER FÜR PC-SPIELE
+
+demo_bottom1_retail_uk              KAUFEN SIE DIE NOCH HEUTE DIE VOLLVERSION VON DEFCON
+demo_bottom2_retail_uk              BESUCHEN SIE IHREN LIEBLINGSHÄNDLER FÜR PC-SPIELE
+
+demo_bottom1_macosx                 Sofortige Aktivierung für nur
+demo_bottom2_macosx                 $25,00
+
+
+# =============================================================================
+# Lobby Overlays
+# =============================================================================
+
+overlay_0_1			--------------------------
+overlay_0_2			-    D E F C O N
+overlay_0_3			--------------------------
+overlay_0_4			-ENTWICKELT DURCH
+overlay_0_5			CHRIS DELAY
+overlay_0_6			GARY CHAMBERS\n
+overlay_0_7			-SOUNDDESIGN
+overlay_0_8			-UND PRODUKTION
+overlay_0_9			ALISTAIR LINDSAY
+overlay_0_10			MICHAEL MAIDMENT\n
+overlay_0_11			-PRODUZIERT VON
+overlay_0_12			-INTROVERSION SOFTWARE
+overlay_0_13			MARK MORRIS
+overlay_0_14			THOMAS ARUNDEL
+overlay_0_15			CHRIS DELAY
+overlay_0_16			JOHN KNOTTENBELT\n
+overlay_0_17			-PR UND MARKETING
+overlay_0_18			VICTORIA ARUNDEL\n
+overlay_0_19			-ZUSÄTZLICHES GRAFIKDESIGN
+overlay_0_20			MORTEN ELGAARD PEDERSEN\n
+overlay_0_21			-VERSAND
+overlay_0_22			WILL MORRIS
+overlay_0_23			 -ZUSÄTZLICHE ENTWICKLUNG
+overlay_0_24			FRANCOIS GAGNE
+
+overlay_1_1			------------------------------------------
+overlay_1_2			-I N T R O V E R S I O N  S O F T W A R E
+overlay_1_3			------------------------------------------\n
+overlay_1_4			MARK MORRIS           DIREKTOR
+overlay_1_5			THOMAS ARUNDEL        DIREKTOR
+overlay_1_6			CHRIS DELAY           DIREKTOR
+overlay_1_7			JOHN KNOTTENBELT      DIREKTOR\n
+overlay_1_8			GARY CHAMBERS         ENTWICKLUNG
+overlay_1_9			VICTORIA ARUNDEL      PR UND MARKETING
+overlay_1_10			WILL MORRIS           VERSAND
+
+overlay_2_1			--------------------------
+overlay_2_2			-ERHÄLTLICHE SIMULATIONEN-
+overlay_2_3			--------------------------\n
+overlay_2_4			FALKEN'S MAZE
+overlay_2_5			BLACK JACK
+overlay_2_6			GIN RUMMY
+overlay_2_7			HEARTS
+overlay_2_8			BRIDGE
+overlay_2_9			CHECKERS
+overlay_2_10			CHESS
+overlay_2_11			POKER
+overlay_2_12			FIGHTER COMBAT
+overlay_2_13			GUERRILLA ENGAGEMENT
+overlay_2_14			DESERT WARFARE
+overlay_2_15			AIR-TO-GROUND ACTIONS
+overlay_2_16			THEATREWIDE TACTICAL WARFARE
+overlay_2_17			THEATREWIDE BIOTOXIC AND CHEMICAL WARFARE\n
+overlay_2_18			GLOBAL THERMONUCLEAR WAR
+
+overlay_3_1			-----------------------------------
+overlay_3_2			-    ZIVILE ZIELE IN MEGATOTEN    -
+overlay_3_3			-----------------------------------\n
+overlay_3_4			LOS ANGELES          3,3
+overlay_3_5			NEW YORK             7,3
+overlay_3_6			CHICAGO              3,0
+overlay_3_7			WASHINGTON DC        4,0
+overlay_3_8			DALLAS               1,0
+overlay_3_9			DETROIT              1,1
+overlay_3_10			PARIS                2,2
+overlay_3_11			BERLIN               1,9
+overlay_3_12			LONDON               7,7
+overlay_3_13			LENINGRAD            4,9
+overlay_3_14			MOSKAU               8,7
+overlay_3_15			ROM                  2,8
+overlay_3_16			TOKIO                8,4
+overlay_3_17			SINGAPUR             2,6
+overlay_3_18			BANGKOK              4,7
+overlay_3_19			BOMBAY               8,2
+overlay_3_20			MEXIKO               8,8
+overlay_3_21			RIO DE JANEIRO       5,6
+overlay_3_22			KAIRO                6,1
+overlay_3_23			ISTANBUL             5,5
+overlay_3_24			PEKING               5,5
+overlay_3_25			SHANGHAI             6,3
+overlay_3_26			DELHI                4,9
+
+overlay_4_1			-----------------------------------------------
+overlay_4_2			- US AIR FORCE GESCHÄTZTE VERLUSTE (PROZENT)  -
+overlay_4_3			-----------------------------------------------\n
+overlay_4_4			AEROSPACE DEFENSE COMMAND            23
+overlay_4_5			AIR COMBAT COMMAND                   76
+overlay_4_6			AIR EDUCATION AND TRAINING COMMAND   24
+overlay_4_7			AIR FORCE COMMUNICATIONS COMMAND     68
+overlay_4_8			AIR FORCE INTELLIGENCE COMMAND       58
+overlay_4_9			AIR FORCE LOGISTICS COMMAND          78
+overlay_4_10			AIR FORCE RESERVE COMMAND            14
+overlay_4_11			AIR FORCE SPACE COMMAND              12
+overlay_4_12			AIR FORCE SPECIAL OPERATIONS COMMAND 56
+overlay_4_13			AIR FORCE SYSTEMS COMMAND            86
+overlay_4_14			AIR MOBILITY COMMAND                 87
+overlay_4_15			ALASKAN AIR COMMAND                  92
+overlay_4_16			HEADQUARTERS COMMAND, USAF           85
+overlay_4_17			NORTHEAST AIR COMMAND                75
+overlay_4_18			PACIFIC AIR COMMAND                  91
+overlay_4_19			PACIFIC AIR FORCES                   85
+overlay_4_20			SPECIAL WEAPONS COMMAND              67
+overlay_4_21			STRATEGIC AIR COMMAND                85
+overlay_4_22			TACTICAL AIR COMMAND                 91
+overlay_4_23			3D AIR DIVISION                      75
+overlay_4_24			UNITED STATES AIR FORCES IN EUROPA   79
+overlay_4_25			UNITED STATES AIR FORCES SOUTHERN COMMAND  65
+
+overlay_5_1			-----------------------------------------------------
+overlay_5_2			AUSWIRKUNGEN DER VERSTRAHLUNG AUF MENSCHLICHEN KÖRPER
+overlay_5_3			-----------------------------------------------------\n
+overlay_5_4			-WENIGER ALS 1 SV (5O-1OO REM)
+overlay_5_5			LEICHTE STRAHLENKRANKHEIT MIT KOPFSCHMERZEN UND ERHÖHTEN
+overlay_5_6			RISIKO VON INFEKTON AUFGRUND VON ZERSTÖRUNG DER 
+overlay_5_7			IMMUNZELLEN. ZEITWEILIGE STERILITÄT BEI MÄNNERN MÖGLICH.\n
+overlay_5_8			1-2 SV (1OO-2OO REM)    (LEICHT)  1O% TÖDLICH NACH 30 TAGEN
+overlay_5_9			2-3 SV (2OO-3OO REM)    (MITTEL)  35% TÖDLICH NACH 30 TAGEN
+overlay_5_10			3-4 SV (3OO-4OO REM)    (SCHWER)  5O% TÖDLICH NACH 30 TAGEN
+overlay_5_11			4-6 SV (4OO-6OO REM)    (AKUT)    6O% TÖDLICH NACH 30 TAGEN
+overlay_5_12			1O-5O SV (1,OOO-5,OOO REM) (AKUT)1OO% TÖDLICH NACH 7 TAGEN\n
+overlay_5_13			-5O-8O SV (5,OOO-8,OOO REM)
+overlay_5_14			SOFORTIGE DESORIENTIERUNG UND KOMA IN SEKUNDEN ODER MINUTEN.
+overlay_5_15			TOD ERFOLGT NACH WENIGEN STUNDEN DURCH ZUSAMMENBRUCH\n DES NERVENSYSTEMS.
+overlay_5_16			- MEHR ALS 8O SV (>8,OOO REM)     SOFORTIGER TOD.
+
+overlay_6_1			-----------------------------------------------
+overlay_6_2			-     US ATOMWAFFEN – STÄRKE UND GEWICHT      -
+overlay_6_3			-----------------------------------------------\n
+overlay_6_4                         MK-1      5      15-16KT           8,900 LBS 
+overlay_6_5                         MK-3    120      18-49KT          10,300 LBS 
+overlay_6_6                         MK-4    550       1-32KT   10,800-10,900 LBS 
+overlay_6_7                         MK-5    140      6-120KT     3,025-3,125 LBS 
+overlay_6_8                         MK-6   1100      8-160KT     7,600-8,500 LBS 
+overlay_6_9                         MK-7   1800       8-61KT     1,645-1,700 LBS 
+overlay_6_10                        MK-8     40      25-30KT     3,230-3,280 LBS 
+overlay_6_11                        MK-11    40      25-30KT     3,210-3,500 LBS 
+overlay_6_12                        MK-12   250      12-14KT     1,000-1,200 LBS 
+overlay_6_13                        MK-14     5        5-7MT   28,954-31,000 LBS 
+overlay_6_14                        MK-15  1500    1.6-3.9MT           7,600 LBS 
+overlay_6_15                        MK-16     5        6-8MT   39,000-42,000 LBS 
+overlay_6_16                        MK-17   200      10-15MT   41,400-42,000 LBS 
+overlay_6_17                        MK-18    90        500KT           8,600 LBS 
+overlay_6_18                        MK-21   275        4-5MT   15,000-17,700 LBS 
+overlay_6_19                        MK-24   105      10-15MT   41,400-42,000 LBS 
+overlay_6_20                        MK-28  4500   70KT-1.1MT     1,700-2,320 LBS 
+overlay_6_21                        MK-36   940      9-10 MT   17,500-17,700 LBS 
+overlay_6_22                        MK-39   700       3-4 MT     6,650-6,750 LBS 
+overlay_6_23                        MK-41   500        25 MT   10,500-10,670 LBS 
+overlay_6_24                        MK-43  1000     70KT-1MT     2,060-2,125 LBS 
+overlay_6_25                        MK-53   350         9 MT     8,850-8,900 LBS 
+overlay_6_26                        MK-57  3100      5-20 KT         490-510 LBS 
+overlay_6_27                        MK-61  3150    80-340 KT         695-716 LBS 
+overlay_6_28                        MK-83   650  UP TO 1.2KT           2,400 LBS
+
+overlay_7_1			-------------------------------------------------
+overlay_7_2			-   STRAHLENKRANKHEIT: SYMPTOME UND ANZEICHEN   -
+overlay_7_3			-------------------------------------------------\n
+overlay_7_4			ÜBELKEIT UND ERBRECHEN
+overlay_7_5			DIARRHOE
+overlay_7_6			HAUTVERBRENNUNGEN (RÖTUNG, BLASEN)
+overlay_7_7			SCHWÄCHE, ERSCHÖPFUNG, OHNMACHT
+overlay_7_8			DEHYDRIERUNG
+overlay_7_9			ENTZÜNDUNG VON OFFENEN FLÄCHEN
+overlay_7_10			HAARAUSFALL
+overlay_7_11			EITERN DER MUNDSCHLEIMHAUT
+overlay_7_12			EITERN DER SPEISERÖHRE
+overlay_7_13			EITERN DES MAGENS
+overlay_7_14			EITERN DER GEDÄRME
+overlay_7_15			BLUTERBRECHEN
+overlay_7_16			BLUTIGER STUHL
+overlay_7_17			BLUTUNG AUS NASE, MUND, ZAHNFLEISCH UND REKTUM
+overlay_7_18			BLUTERGUESSE
+overlay_7_19			VERSCHORFUNG DER HAUT
+overlay_7_20			OFFENE STELLEN DER HAUF
+
+overlay_8_1			-----------------------------------------------------------------
+overlay_8_2			-ISOTOP NA      HALBWERTSZEIT (JAHRE)    DM  DE(MEV) DP
+overlay_8_3			-----------------------------------------------------------------\n
+overlay_8_4			PU-238 SYNTHETISCH              88     SF      -      -
+overlay_8_5			PU-239 SYNTHETISCH          24,110     SF      -      -
+overlay_8_6			U-232  SYNTHETISCH            68.9   a + SF  5.414  TH-228
+overlay_8_7			U-233  SYNTHETISCH         159,200   SF + a  4.909  TH-229
+overlay_8_8			U-234      0.0058%        245,500   SF + a  4.859  TH-230
+overlay_8_9			U-235        0.72%    703,800,000   SF + a  4.679  TH-231
+overlay_8_10		U-236  SYNTHETISCH      23,420,000   SF + a  4.572  TH-232
+overlay_8_11		U-238      99.275%  4,468,000,000   SF + a  4.270  TH-234
+
+overlay_9_1			WIE WÄRE ES MIT EINER NETTEN PARTIE SCHACH?
+
+overlay_10_1			---------------------------------------------------
+overlay_10_2			-        STRATEGISCHE ZIELE IN DER WELT           -
+overlay_10_3			---------------------------------------------------\n
+overlay_10_4			Norad          38 44' 39.68" N   104 50' 48.18" W
+overlay_10_5			Keflavik       63 59' 07.71" N    22 36' 20.06" W
+overlay_10_6			Brüssel        50 50' 54.79" N     4 21' 36.66" E
+overlay_10_7			Neapel         40 51' 14.64" N    14 17' 21.84" E
+overlay_10_8			Mons (Belgien) 50 26' 32.55" N     3 57' 28.44" E
+overlay_10_9			Norfolk        36 56' 59.84" N    76 19' 48.57" W
+overlay_10_10			Pearl Harbour  21 21' 48.77" N   157 57' 39.31" W
+overlay_10_11			Ramstein       49 26' 13.33" N     7 35' 54.11" E
+overlay_10_12			Kadena (Okinawa)26 21' 28.86" N  127 46' 13.53" E
+overlay_10_13			Rota (Spanien) 36 38' 15.33" N       21' 11.90" W
+overlay_10_14			Wladiwostok    43 06' 41.86" N   131 53' 23.22" E
+overlay_10_15			Sewastopol     44 36' 56.88" N    33 34' 46.83" E
+overlay_10_16			Leningrad      59 57' 39.60" N    30 18' 41.85" E
+overlay_10_17			Murmansk       68 58' 14,59" N    33 01' 11.20" E
+overlay_10_18			Tatischtschewo 51 40' 37.79" N    45 36' 46.89" E
+overlay_10_19			Barnaul        53 19' 39.80" N    83 45' 35.86" E
+
+overlay_11_1			---------------------------------------------------
+overlay_11_2			-            WICHTIGE ATOMEXPLOSIONEN             -
+overlay_11_3			---------------------------------------------------
+overlay_11_4			-DATUM        NAME      STÄRKE (KT) LAND\n
+overlay_11_5			16 JUL 1945   TRINITY        19     USA
+overlay_11_6			6 AUG 1945    LITTLE BOY     15     USA
+overlay_11_7			9 AUG 1945    FAT MAN        21     USA
+overlay_11_8			29 AUG 1949   JOE 1          22     UDSSR
+overlay_11_9			3 OKT 1952    HURRICANE      25     GB
+overlay_11_10			1 NOV 1952    IVY MIKE   10,200     USA
+overlay_11_11			12 AUG 1953   JOE 4         400     UDSSR
+overlay_11_12			1 MAR 1954    CASTLE BRAVO 15,000   USA
+overlay_11_13			22 NOV 1955   RDS-37      1,600     UDSSR
+overlay_11_14			8 NOV 1957    GRAPPLE X   1,800     GB
+overlay_11_15			13 FEB 1960   GERBOISE BLEUE 60     FRANKREICH
+overlay_11_16			31 OKT 1961   TSAR BOMBA 50,000     UDSSR
+overlay_11_17			16 OKT 1964   596            22     CHINA
+overlay_11_18			17 JUN 1967   TEST NO. 6  3,300     CHINA
+overlay_11_19			24 AUG 1968   CANOPUS     2,600     FRANKREICH
+overlay_11_20			18 MAI 1974   SMILING BUDDHA 12     INDIEN
+overlay_11_21			11 MAI 1998   SHAKTI I       43     INDIEN
+overlay_11_22			13 MAI 1998   SHAKTI II      12     INDIEN
+overlay_11_23			28 MAI 1998   CHAGAI-I        9     PAKISTAN
+
+overlay_12_1			-----------------------------------------
+overlay_12_2			-    BETATESTER (SEITE 1 VON 2)
+overlay_12_3			-----------------------------------------\n
+overlay_12_4			ASHLEY 'NEOTHERMIC' PINNER
+overlay_12_5			ALESSANDRO 'FIRESHIP4' PEDRINA MCCARTHY
+overlay_12_6			BILL 'BIPP5' RASTELLO
+overlay_12_7			BRODY 'LEONAKEN' BROOKS
+overlay_12_8			CHARLES BROWN
+overlay_12_9			CHRIS BROWN
+overlay_12_10			CHRIS 'SUVIR' BOYD
+overlay_12_11			CHRISTOPH KOEHLER
+overlay_12_12			CORPORATESPECTRE
+overlay_12_13			DAMJAN 'VIRUSEX' BELAVIC
+overlay_12_14			DANIEL 'DK' KARLING
+overlay_12_15			DEREK 'PUNISHER BASS' SCHOTT
+overlay_12_16			FURRIES
+overlay_12_17			HENNING HORN
+overlay_12_18			HEWAT KENNEDY
+overlay_12_19			JASON 'JAYSC' TIEN
+overlay_12_20			JENS WIECHERS
+overlay_12_21			JO STANSFIELD
+overlay_12_22			JOHAN 'ZARKOW' MUNKESTAM
+overlay_12_23			JOSHUA 'MIAH' CLAYTON
+overlay_12_24			JUSTIN 'ATELOPHOBIA' GOTTULA
+overlay_12_25			JØRGEN 'DIRTY HARRY POTTER' BERTHELSEN
+overlay_12_26			KASPER 'AAARGH' MEERTS
+overlay_12_27			LEANDER 'ELDIABLO' HAMBLEY
+overlay_12_28			LUKE HOSCHKE
+overlay_12_29			MARIUSZ 'MANDI^ATO' DANILEWICZ
+
+overlay_13_1			-----------------------------------------
+overlay_13_2			-    BETATESTER (SEITE 2 VON 2)
+overlay_13_3			-----------------------------------------\n
+overlay_13_4			MARK 'LLAMABOY' VINE
+overlay_13_5			MICHAEL NICHOLLS
+overlay_13_6			MORTEN 'NUTTER' PEDERSEN
+overlay_13_7			MR. VIOLATOR
+overlay_13_8			NEIL ROSS
+overlay_13_9			NIGEL 'MOUSE' MORSE
+overlay_13_10			OLIVER 'AGENTX 24' GRUBIN
+overlay_13_11			PHYDAUX
+overlay_13_12			PIOTR 'THEPIACHU' PIASECKI
+overlay_13_13			PITBEAST
+overlay_13_14			PROZAK
+overlay_13_15			RICHARD 'FALSE' LA CHARITÉ III
+overlay_13_16			SAM 'MAS' NORRIS
+overlay_13_17			SHAWN 'TRICKFRED' MACIVER
+overlay_13_18			SIMON 'N3O77' SPARKS
+overlay_13_19			STEVEN NOONAN
+overlay_13_20			SWIL232
+overlay_13_21			THE GOLDFISH
+overlay_13_22			THIERRY 'BOLKA' MARTIN
+overlay_13_23			TIM BAVERSTOCK
+overlay_13_24			TOBY 'THE TUBSTAR' INNOCENT
+overlay_13_25			TOUMAZ
+overlay_13_26			VIRGINIJUS 'LEGIO' PAMPIKAS
+overlay_13_27			WILL 'MIZER' NEW
+overlay_13_28			WOLFLORD
+overlay_13_29			ZACHARY 'XYZYXX' PARKER
+
+overlay_14_1			-----------------------------------------
+overlay_14_2			 -            BETA-TESTER MAC
+overlay_14_3			-----------------------------------------\n
+overlay_14_4            ALASTAIR ‘PROPHILE’ LYNN
+overlay_14_5            ALEC ‘HAMSTER’ INGULSRUD
+overlay_14_6            ANDREW ‘ANDCARNE’ CARNE
+overlay_14_7            BOLKO ‘KRAUTI’ MAASS
+overlay_14_8            BRIAN DICK
+overlay_14_9            BRYCE ‘ZOMBAT’ HOMICK
+overlay_14_10           CIARÁN ‘MONTYPHY’ EATON
+overlay_14_11           DOMINIC ‘REFRIDGERON’ WHITE
+overlay_14_12           JACK ‘DASH RANTIC’ CARLSON
+overlay_14_13           JAMES ‘CONSUL BOB’ GOOCH
+overlay_14_14           JAMES ‘LASTOF’ TITMUSS
+overlay_14_15           JONAS ‘FREQ245’ MIRWALD
+overlay_14_16           KIRK ‘KAUTHOR’ STALEY
+overlay_14_17           MARK ‘MRXAK’ PETCAVAGE
+overlay_14_18           MIKE ASH
+overlay_14_19           NATHANIEL ‘MACKILROY’ PORTER
+overlay_14_20           NICK ‘NFREADER’ FARLEY
+overlay_14_21           OWEN ‘MR ED209’ BILLCLIFFE
+overlay_14_22           PER ‘PV2B’ VON ZWEIGBERGK
+overlay_14_23           SOLRA BIZNA
+overlay_14_24           XANDER HENDERSON
+
+overlay_15_1			----------------------------------------
+overlay_15_2			 - MAC-PORTIERUNG VON AMBROSIA SOFTWARE
+overlay_15_3			----------------------------------------\n
+overlay_15_4			MIKE BLAGUSZEWSKI                PORTIERUNG
+overlay_15_5			MARCUS CONGE            ANWENDUNGSSYMBOL
+overlay_15_6			DAVID DUNHAM                     TESTS
+overlay_15_7			EVAN 'SULTAN' SMITH              TESTS
+overlay_15_8			 -ZUSÄTZLICHE PORTIERUNG DURCH
+overlay_15_9			JOSHUA 'MIAH' CLAYTON
+overlay_15_10			STEVEN NOONAN
+overlay_15_11           ----------------------------------------
+overlay_15_12           -           LINUX-PORTIERUNG
+overlay_15_13           ----------------------------------------\n
+overlay_15_14           STEVEN NOONAN
+overlay_15_15           JOHN KNOTTENBELT
+overlay_15_16           JOSHUA ‘MIAH’ CLAYTON
+overlay_15_17           ----------------------------------------\n
+overlay_15_18           Übersetzungen stellten von Game Localization Network Ltd. zur Verfügung

@@ -1,0 +1,179 @@
+
+CHAPTER Start   
+    NEXTCLICKABLE
+END
+
+CHAPTER MoveCamera
+    NEXTCLICKABLE
+END
+
+CHAPTER ZoomCamera
+    NEXTCLICKABLE
+END
+
+CHAPTER MoveCamera2
+    NEXTCLICKABLE
+END
+
+CHAPTER SiloFocus
+END
+
+CHAPTER Mission1DestroyRadar
+END
+
+CHAPTER Mission1End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission2Start
+END
+
+CHAPTER M2SelectSilo
+END
+
+CHAPTER M2PlaceSilos
+END
+
+CHAPTER M2DestroyNukes
+END
+
+CHAPTER M2End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission3Start
+END
+
+CHAPTER M3RadarPlacement
+END
+
+CHAPTER M3SiloPlacement
+END
+
+CHAPTER M3GameSpeed
+END
+
+CHAPTER M3Defcon1
+END
+
+CHAPTER M3DestroyEnemy
+END
+
+CHAPTER M3SilosTakeTime
+END
+
+CHAPTER M3End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission4Start
+END
+
+CHAPTER M4LaunchFighters
+END
+
+CHAPTER M4Radar
+END
+
+CHAPTER M4LaunchBombers
+END
+
+CHAPTER M4BomberInfo
+END
+
+CHAPTER M4NukesLaunched
+END
+
+CHAPTER M4End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission5Start
+END
+
+CHAPTER M5CreateFleet
+END
+
+CHAPTER M5BattleShipInfo
+END
+
+CHAPTER M5DestroyEnemy
+END
+
+CHAPTER M5DestroyEnemy2
+END
+
+CHAPTER M5End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission6Start
+END
+
+CHAPTER Mission6SubIntro
+END
+
+CHAPTER Mission6PlaceSubs
+END
+
+CHAPTER M6SubInfo
+END
+
+CHAPTER M6DestroySubs
+END
+
+CHAPTER M6MoveSubs
+END
+
+CHAPTER M6EnemyLaunch
+END
+
+CHAPTER M6LaunchExplanation
+END
+
+CHAPTER M6End
+    NEXTCLICKABLE
+END
+
+CHAPTER Mission7Start
+END
+
+CHAPTER Mission7EnemyAttack
+END
+
+CHAPTER Mission7Retaliate
+END
+
+CHAPTER M7Victory
+END
+
+CHAPTER Mission1Failed
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission2Failed
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission3Failed1
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission3Failed2
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission4Failed
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission5Failed
+    RESTARTCLICKABLE
+END
+
+CHAPTER Mission7Failed
+    RESTARTCLICKABLE
+END
+
+CHAPTER End
+END

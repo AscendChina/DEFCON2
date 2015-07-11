@@ -1,0 +1,112 @@
+STYLE WindowBackground
+	PRIMARYCOL        c8c8c8dc
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE WindowTitleBar
+	PRIMARYCOL        000000dc
+	SECONDARYCOL      6e6e6edc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE WindowOuterBorder
+	PRIMARYCOL        555a5fdc
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE WindowInnerBorder
+	PRIMARYCOL        000000dc
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE ButtonBackground
+	PRIMARYCOL        78786eeb
+	SECONDARYCOL      a0a0bedc
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE ButtonHighlighted
+	PRIMARYCOL        6e6ec8dc
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE ButtonClicked
+	PRIMARYCOL        c8c8ffff
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE ButtonBorder
+	PRIMARYCOL        c8bef0d2
+	SECONDARYCOL      0000005f
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE BoxBackground
+	PRIMARYCOL        000a23b5
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE BoxBorder
+	PRIMARYCOL        00000096
+	SECONDARYCOL      c8bef0be
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE InputBackground
+	PRIMARYCOL        00000078
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE InputBorder
+	PRIMARYCOL        00000064
+	SECONDARYCOL      91919196
+	TRANSPARENCY      0
+	NEGATIVE          0
+	SIZE              0.00
+END
+
+STYLE FontWindowTitle
+	PRIMARYCOL        ebffffdc
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      1
+	NEGATIVE          0
+	SIZE              18.35
+END
+
+STYLE FontButton
+	PRIMARYCOL        d2d2d200
+	SECONDARYCOL      cdcdcddc
+	TRANSPARENCY      0
+	NEGATIVE          1
+	SIZE              12.24
+END
+

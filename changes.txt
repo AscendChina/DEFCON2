@@ -1,0 +1,214 @@
+==================
+      v1.6
+  22nd July 2010
+==================
+
+- Incorporated multi-language support for French/Italian/German/Spanish
+  into main IV version
+
+
+==================
+   v1.6 (Steam)
+  23rd June 2010
+==================
+
+- 21 New steam achievements
+- Steam stat tracking
+
+
+==================
+     v1.51
+18th November 2007
+==================
+
+- Fixed a crash in the MOD system (only present in 1.5 and up).
+
+
+==================
+     v1.5
+13th September 2007
+==================
+
+- Translation in French, Italian, German and Spanish
+
+
+==================
+     v1.43
+==================
+
+- Fixed potential exploit:
+    Fleets could be made to sail through land masses if sent to certain 
+    hotspots around the world. (Eg subs could sail through America).
+    Only the Server needs to run this fix to prevent the exploit.
+
+- Improved the way local IP is determined. Should help people who have 
+    problems creating games on their local system.
+
+
+==================
+     v1.42
+3rd May 2007
+==================
+
+- Fixed bugs in 1.4:
+    -Some serious performance problems related to fleet activity
+    -Bugs with City Assignment (negative city populations etc)
+    -Radar not working properly in the pacific (over the seam)
+    -Placing a unit over the seam sometimes caused ships to vanish
+    -Nuke queue counter was often wrong
+    -Word wrapping in the chat window could go very wrong with long strings
+
+
+==================
+     v1.4
+12th April 2007
+==================
+
+- Cross platform compatability 
+  PC/Mac/Linux versions are now network compatible with each other
+  
+- AmBX support added (PC only, requires amBX hardware of course)
+  
+- City Populations game option added
+    Default                 : as before
+    Equalised               : all cities have the same population
+    Random                  : all cities have random populations
+    TotallyRandom           : same as Random, and random cities are chosen 
+                              instead of the major world cities
+      
+- Bug fixes and improvements:      
+    - Very rarely a plane could crash over a ground target and effectively
+      nuke it, causing population death or building destruction
+    - Mods no longer disappear from list when deactivated
+    - "Can't place here" circles now show when territory display is on
+    - Can no longer set blank or overlong player name
+    - Word wrapping algorithm improved (most obvious in the chat window)
+    - The game start countdown will now abort if a player leaves
+    - Attempting to set a very long username no longer crashes DEFCON
+    - Removed unused "Level 8" button in Tutorial interface
+    - Users can no longer join incompatible games, even if they really try
+
+
+==================
+      v1.3
+8th January 2007
+==================
+
+- New White Board system
+    Allies can now share a battle plan directly drawn on the world map.
+
+- Additional option to change the player name directly from the option menu
+
+- In the lobby, the last game name is now remembered
+
+- Various minor improvements and fixes
+    -Restart Ambience and Music (if in a game) when applying a mod.
+    -Fix the crash when applying a mod removing sounds.
+    -It's now impossible to start a game with a empty name.
+    -Fix start up crash involving missing game name in game-history.txt.
+    -Don't advertise a new version on the main interface if the current version 
+     is higher than the latest version advertised by the meta server.
+    -The version update link on the main interface is no more opened when 
+     clicked if there is a menu over it.
+
+
+==================
+      v1.2
+12th December 2006
+==================
+
+- New MOD support system
+    Mods can be loaded and unloaded in-game from a new MODs window.
+    Mod authors can provide details on their MOD : a screenshot and a data 
+    file, which will be shown in the MODs window when the mod is selected.
+
+    MODs can be made to give Defcon a complete graphical makeover, eg making
+    the entire game look like it's set in space.  Or they can be entirely new
+    maps - eg Defcon played out over a map of Australia, with new territories
+    and cities to match.
+
+    There are two types of MOD:
+        Critical MOD : required by all players connecting, eg a new Map
+        Non critical MOD : graphical/audio only mod
+
+    When joining a game server any Critical mods that are required will be 
+    activated.  If those mods are not installed you will not be able to join.
+    The Server Browser now has a new column to show what MODs are running.
+
+    Servers that are running MODs you do NOT have installed will now show up 
+    yellow in the Server Browser (as opposed to Red which signifies they are
+    running an incompatible version)           
+
+
+- Additional minor MOD support
+    Image "data/graphics/explosion.bmp" is now only used by Explosions.  
+    Previously it was used to render population and radiation, making it 
+    impossible to mod explosion graphics without modding those too.
+
+
+- New preferences option : RenderNodes 
+    Very usefull for people making new maps for Defcon.
+    Set this option to 1 (by editing your preferences.txt file) to render the 
+    Nodes used in-game.  Red = AI Target, Green = AI Placement, White = Travel
+    The white lines represent the possible routes ships can sail along.
+    If you have a team selected the Red AI Target markers will fill to indicate
+    a sensible target within striking range of any enemy.    
+
+
+=================
+      v1.1
+18th October 2006
+=================       
+
+- Improvements to the Server Browser Window
+
+    The number of players in any game is now rendered visually:
+        Bright green box = human player
+        Dull green box = CPU player
+        Grey box = open slot
+        This makes it much easier to see at a glance which games are interesting
+
+    The Server browser no longer displays the version column (eg Defcon v1.0)
+    The Server browser now displays the Game Mode in its own column
+
+    The Server browser will remember which servers you have joined recently.
+        They will be drawn highlighted in your list, so you can see them at a 
+        glance.  The browser will store the previous 10 connected servers, and
+        will also save the list and reload automatically when restarting.
+        Note: Does not save your own game servers that you connected to
+        - Makes it easier to see which games are not worth trying again
+        - Makes it easier to rejoin a game you got disconnected from
+
+    Can now filter the list :
+        All Games
+        Games In Lobby only
+        Games In Progress only
+        Recently joined Servers only
+        LAN Games only
+
+    In addition, you can choose to filter out less desirable server types:
+        Hide single player games  (games in progress with just 1 human player)
+        Hide demo games           (games created by a demo user, 2 players max)
+        Hide default named games  (ie games with the name 'New Game Server')
+        (Click on the Filters button to access these options)
+
+    You can sort the server list by clicking on the column headings
+        Sort by name (alphabetically)
+        Sort by Game Mode
+        Sort by Game Time
+        Sort by Num spectators
+        Sort by Num players             (sorts by num human players)
+        Click once to sort by that column
+        Click again to sort backwards by that column
+        Click again to return to default sorting
+
+    The 'Server Details' window (opened by right clicking on a server) now 
+    includes a button to Join the server you are observing.
+
+
+===================
+       v1.0
+25th September 2006
+===================
+
+Initial release

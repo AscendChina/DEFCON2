@@ -1,0 +1,7 @@
+<ambx> 
+        <version> 1.0.0 </version> 
+        <retract> 
+                <experience> defcon_lobby_experience </experience> 
+                <media> defcon_lobby_media </media> 
+        </retract> 
+</ambx> 

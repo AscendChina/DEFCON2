@@ -1,0 +1,33 @@
+<ambx>
+	<version> 1.0.0 </version>
+	
+	<retract>
+		<experience> defcon_alert_defcon4_experience   </experience>
+	</retract>
+	
+	<experience> defcon_alert_defcon4_experience 
+		<exclusive> no </exclusive>
+		<level> high </level>
+		<fragment>defcon_alert_defcon4_experience_frag
+			<object>defcon_alert_main
+				<state> defcon_alert_white defcon_alert_fade250 </state>
+				<location>N NE NW </location>
+				<start_time>+00:00:00.00</start_time>
+				<end_time>+00:00:02.36</end_time>
+				<importance>medium</importance>
+			</object>
+			<object>defcon_alert_defconcolour
+				<state> defcon_alert_defcon4 defcon_alert_fade50 </state>
+				<location>N NE NW</location>
+				<start_time>+00:00:01.50</start_time>
+				<end_time>+00:00:04.15</end_time>
+				<importance>high</importance>
+				<at_end>
+					<retract>
+						<experience> defcon_alert_defcon4_experience   </experience>
+					</retract>
+				</at_end>
+			</object>
+		</fragment>
+	</experience>
+</ambx> 

@@ -1,0 +1,69 @@
+<ambx>
+	<version> 1.0.0 </version>
+	<experience> defcon_lobby_experience 
+		<exclusive> yes </exclusive>
+		<level> high </level>
+		<fragment>defcon_lobby_experience_frag
+			<object>defcon_lobby_everywhere_green
+				<state> defcon_lobby_green defcon_alert_fade_rotate </state>
+				<location>everywhere </location>
+				<start_time> now </start_time>
+				<end_time> forever </end_time>
+				<importance>Very_low</importance>
+			</object>
+			<object>defcon_lobby_globe
+				<state> defcon_lobby_green_shadow defcon_alert_fade_rotate </state>
+				<when> after +00:00:00.00 and  before +00:00:02.00 then
+				<location>nw n ne </location>
+				</when>
+				<when> after +00:00:02.00 and  before +00:00:04.00 then
+				<location>n nw w </location>
+				</when>
+				<when> after +00:00:04.00 and  before +00:00:06.00 then
+				<location>nw w sw </location>
+				</when>
+				<when> after +00:00:06.00 and  before +00:00:08.00 then
+				<location>w sw w </location>
+				</when>
+				<when> after +00:00:08.00 and  before +00:00:10.00 then
+				<location>sw s se </location>
+				</when>
+				<when> after +00:00:10.00 and  before +00:00:12.00 then
+				<location>s se e </location>
+				</when>
+				<when> after +00:00:12.00 and  before +00:00:14.00 then
+				<location>se e ne </location>
+				</when>
+				<when> after +00:00:14.00 and  before +00:00:16.00 then
+				<location>e ne n </location>
+				</when>
+				<start_time>+00:00:00.00</start_time>
+				<end_time>+00:00:16.00</end_time>
+				<importance>low</importance>
+				<repeat><count>0</count></repeat>
+			</object>
+		</fragment>
+	</experience>
+	<media> defcon_lobby_media
+		<fragment> defcon_lobby_media_frag
+			<asset>defcon_lobby_green
+				<state> defcon_lobby_green </state>
+				<type>amBX_rgb_light</type>
+				<value>0 33 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_lobby_green_shadow
+				<state> defcon_lobby_green_shadow </state>
+				<type>amBX_rgb_light</type>
+				<value>0 16 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<effect>defcon_alert_fade_rotate
+				<state> defcon_alert_fade_rotate </state>
+				<type>amBX_rgb_light</type>
+				<value>amBX_fade</value>
+				<parameter>+00:00:04.00</parameter>
+			</effect>
+		</fragment>
+	</media>
+</ambx> 

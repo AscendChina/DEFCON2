@@ -1,0 +1,53 @@
+ScreenWidth = 640
+ScreenHeight = 480
+ScreenWindowed = 1
+ScreenColourDepth = 16
+ScreenRefresh = 60
+ScreenZDepth = 24
+ 
+SoundLibrary = dsound
+SoundMixFreq = 22050
+SoundMasterVolume = 255
+SoundChannels = 8
+SoundMusicChannels = 4
+SoundHW3D = 0
+SoundSwapStereo = 0
+SoundMemoryUsage = 1
+SoundBufferSize = 512
+SoundDSP = 0
+ 
+RenderSmoothLines = 0
+RenderBorders = 1
+RenderCityNames = 1
+RenderCountryNames = 0
+RenderWater = 2
+RenderRadiation = 0
+RenderLowDetailWorld = 0
+RenderObjectTrails = 1
+RenderLobbyEffects = 0
+ 
+NetworkMetaServerPort = 5009
+NetworkServerPort = 5010
+NetworkClientPort = 0
+NetworkUsePortForwarding = 0
+NetworkTrackSynchronisation = 1
+ 
+InterfaceTooltips = 1
+InterfacePopupScale = 7.00
+InterfaceSideScrolling = 1
+InterfaceCameraDragging = 1
+InterfacePanicKey = 1
+InterfaceStyle = default.txt
+InterfaceZoomSpeed = 1.0
+InterfaceTextLanguage = english
+ 
+PlayerName = testbed
+ServerName1 = 
+TutorialCompleted = 0
+RenderNodes = 0
+AmbxEnabled = 0
+UseOneButtonMouseModifiers = 1
+ 
+WindowScores = 470.0.170.150
+WindowWorldStatus = 110.0.420.25
+ModPath = 

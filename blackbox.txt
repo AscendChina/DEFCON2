@@ -1,0 +1,15 @@
+=========================
+=   BLACK BOX REPORT    =
+=========================
+
+Defcon 1.6 built Jul 22 2010
+Date 20:17, 5/8/2012
+
+ERROR : 'Couldn't find language 'english''
+
+=========================
+=      STACKTRACE       =
+=========================
+
+retAddress = 00414F25
+retAddress = 00000000

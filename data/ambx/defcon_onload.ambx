@@ -1,0 +1,67 @@
+<ambx>
+	<version> 1.0.0 </version>
+	<media> defcon_background_media
+		<fragment> defcon_alert_media_frag
+			<asset>defcon_alert_white
+				<state> defcon_alert_white </state>
+				<type>amBX_rgb_light</type>
+				<value>100 100 100</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_black
+				<state> defcon_alert_black </state>
+				<type>amBX_rgb_light</type>
+				<value>0 0 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_defcon5
+				<state> defcon_alert_defcon5 </state>
+				<type>amBX_rgb_light</type>
+				<value>0 0 100</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_defcon4
+				<state> defcon_alert_defcon4 </state>
+				<type>amBX_rgb_light</type>
+				<value>0 100 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_defcon3
+				<state> defcon_alert_defcon3 </state>
+				<type>amBX_rgb_light</type>
+				<value>100 100 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_defcon2
+				<state> defcon_alert_defcon2 </state>
+				<type>amBX_rgb_light</type>
+				<value>100 50 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<asset>defcon_alert_defcon1
+				<state> defcon_alert_defcon1 </state>
+				<type>amBX_rgb_light</type>
+				<value>70 0 0</value>
+				<shareable>YES</shareable>
+			</asset>
+			<effect>defcon_alert_fade250
+				<state> defcon_alert_fade250 </state>
+				<type>amBX_rgb_light</type>
+				<value>amBX_fade</value>
+				<parameter>+00:00:02.50</parameter>
+			</effect>
+			<effect>defcon_alert_fade175
+				<state> defcon_alert_fade175 </state>
+				<type>amBX_rgb_light</type>
+				<value>amBX_fade</value>
+				<parameter>+00:00:01.75</parameter>
+			</effect>
+			<effect>defcon_alert_fade50
+				<state> defcon_alert_fade50 </state>
+				<type>amBX_rgb_light</type>
+				<value>amBX_fade</value>
+				<parameter>+00:00:00.30</parameter>
+			</effect>
+		</fragment>
+	</media>
+</ambx> 

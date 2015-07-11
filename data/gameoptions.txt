@@ -1,0 +1,100 @@
+ 
+# GAME OPTIONS
+# Name           :   Name of the variable
+# Min            :   The minimum allowable value
+# Max            :   The maximum allowable value.  If type is String then this is max string length
+# Default        :   The starting value
+# Change         :    Amount to change option by.  0 = DropDownMenu   -1 = String
+
+# NOTE           :   The very first parameter MUST be 'ServerName'
+
+
+#   Name                MIN     MAX     Default     Change      
+# ==============================================================
+
+ServerName              0       24      0           -1
+    New Game Server
+
+AdvertiseOnInternet     0       1       1           0           
+    Disabled
+    Enabled
+
+AdvertiseOnLAN          0       1       1           0           
+    Disabled
+    Enabled
+
+GameMode                0       6       0           0
+    Default
+    Office Mode
+    Speed Defcon
+    Diplomacy
+    BigWorld
+    Tournament
+    Custom
+    
+MaxTeams                1       6       3           1
+TerritoriesPerTeam      1       6       1           1
+CitiesPerTerritory      1       50      25          1
+PopulationPerTerritory  10      200     100         10
+
+CityPopulations         0       3       0           0
+    Default
+    Equalised
+    Random
+    TotallyRandom
+    
+RandomTerritories       0       1       0           0
+    No
+    Yes
+    
+PermitDefection         0       1       1           0
+    No
+    Yes
+
+RadarSharing            0       3       1           0
+    AlwaysOff
+    Alliance
+    Selective
+    AlwaysOn
+
+GameSpeed               0       4       0           0
+    Slowest Requested
+    Real Time
+    5x Real Time
+    10x Real Time
+    20x Real Time
+
+SlowestSpeed            0       4       1           0
+    Pause
+    Real Time
+    5x Real Time
+    10x Real Time
+    20x Real Time
+    
+ScoreMode               0       2       0           0
+    Default
+    Survivor
+    Genocide
+    
+VictoryTrigger          0       100     20          5
+VictoryTimer            0       600     45          10
+MaxGameRealTime         0       600     0           1
+
+VariableUnitCounts      0       1       0           0
+    Disabled
+    Enabled
+
+WorldScale              50      200     100         1
+
+MaxSpectators           0       100     3           1
+SpectatorChatChannel    0       1       1           0
+    Private
+    Public
+    
+TeamSwitching           0       1       0           0
+    Disabled
+    Enabled
+
+ServerPassword          0       16      0           -1
+     
+     

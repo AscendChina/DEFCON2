@@ -1,0 +1,364 @@
+# =========================================================
+OBJECT Bunker
+	EVENT StartAmbience       
+		SOUNDNAME          bunker
+		SOURCETYPE         1
+		POSITIONTYPE       4
+		INSTANCETYPE       0
+		LOOPTYPE           2
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        5.52  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.91  UpdateConstantly
+		ATTACK             PARAMETER TypeFixedValue        2.90  UpdateConstantly
+		SUSTAIN            PARAMETER TypeFixedValue      -20.32  UpdateConstantly
+		RELEASE            PARAMETER TypeFixedValue       19.35  UpdateConstantly
+	END
+	EVENT StartAmbience       
+		SOUNDNAME          bunkerspot
+		SOURCETYPE         1
+		POSITIONTYPE       5
+		INSTANCETYPE       0
+		LOOPTYPE           2
+		MINDISTANCE        92.27
+		VOLUME             PARAMETER TypeFixedValue        8.00  UpdateConstantly
+		ATTACK             PARAMETER TypeFixedValue        3.68  UpdateConstantly
+		SUSTAIN            PARAMETER TypeFixedValue       -4.84  UpdateConstantly
+		RELEASE            PARAMETER TypeFixedValue        4.84  UpdateConstantly
+		LOOPDELAY          PARAMETER TypeRangedRandom      9.10    15.10     0.00  UpdateOncePerLoop
+	END
+END
+
+
+# =========================================================
+OBJECT Object_carrier
+	EVENT SonarPing           
+		SOUNDNAME          sonar
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        1.00
+		VOLUME             PARAMETER TypeFixedValue        8.00  UpdateConstantly
+	END
+	EVENT DepthCharge         
+		SOUNDNAME          depthcharge
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        6.70
+		VOLUME             PARAMETER TypeFixedValue        8.97  UpdateConstantly
+	END
+END
+
+
+# =========================================================
+OBJECT Music
+	EVENT StartMusic          
+		SOUNDNAME          music
+		SOURCETYPE         1
+		POSITIONTYPE       4
+		INSTANCETYPE       0
+		LOOPTYPE           2
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeLinked          100.00     8.00     0.00     9.52     0.80  Team_Survivors  UpdateConstantly
+		FREQUENCY          PARAMETER TypeLinked            0.00     0.30    99.60     1.00     0.85  Team_Survivors  UpdateConstantly
+		ATTACK             PARAMETER TypeFixedValue        5.03  UpdateConstantly
+		SUSTAIN            PARAMETER TypeFixedValue       -3.87  UpdateConstantly
+		RELEASE            PARAMETER TypeFixedValue       19.74  UpdateConstantly
+	END
+END
+
+
+# =========================================================
+OBJECT Interface
+	EVENT Text                
+		SOUNDNAME          text
+		SOURCETYPE         1
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        2.42  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.59  UpdateOncePerLoop
+	END
+	EVENT DefconChange        
+		SOUNDNAME          defconstage
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        7.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.39  UpdateConstantly
+	END
+	EVENT HighlightObject     
+		SOUNDNAME          hilite1
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        5.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.70  UpdateConstantly
+	END
+	EVENT HighlightObjectState
+		SOUNDNAME          mouseover
+		SOURCETYPE         1
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        3.23  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.70  UpdateConstantly
+	END
+	EVENT SelectObjectState   
+		SOUNDNAME          hilite1alt
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        6.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.70  UpdateConstantly
+	END
+	EVENT SelectObject        
+		SOUNDNAME          rollover1a_wet
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        5.35  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.39  UpdateConstantly
+	END
+	EVENT SetMovementTarget   
+		SOUNDNAME          hilite1alt
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        6.06  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.90  UpdateConstantly
+	END
+	EVENT SetCombatTarget     
+		SOUNDNAME          hilite1alt
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        6.03  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.61  UpdateConstantly
+	END
+	EVENT DeselectObject      
+		SOUNDNAME          hilite1alt
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        6.97  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.52  UpdateConstantly
+	END
+	EVENT GameOver            
+		SOUNDNAME          gameover
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        8.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.47  UpdateConstantly
+		ATTACK             PARAMETER TypeFixedValue        0.58  UpdateConstantly
+	END
+	EVENT FirstLaunch         
+		SOUNDNAME          enemylaunch2
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        8.97  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.55  UpdateConstantly
+	END
+	EVENT ReceiveChatMessage  
+		SOUNDNAME          chat
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        5.00  UpdateConstantly
+	END
+	EVENT SendChatMessage     
+		SOUNDNAME          chat
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        100.00
+		VOLUME             PARAMETER TypeFixedValue        5.00  UpdateConstantly
+	END
+END
+
+
+# =========================================================
+OBJECT Object_sub
+	EVENT SonarPing           
+		SOUNDNAME          sonar
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        1.00
+		VOLUME             PARAMETER TypeFixedValue        8.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeFixedValue        0.90  UpdateConstantly
+	END
+END
+
+
+# =========================================================
+OBJECT Object_nuke
+	EVENT Detonate            
+		SOUNDNAME          nukerumble
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        15.23
+		VOLUME             PARAMETER TypeFixedValue        9.00  UpdateConstantly
+	END
+	EVENT Detonate            
+		SOUNDNAME          fallout
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        5.05
+		VOLUME             PARAMETER TypeFixedValue       10.00  UpdateConstantly
+		FREQUENCY          PARAMETER TypeRangedRandom      0.67     0.99     0.67  UpdateOncePerLoop
+	END
+END
+
+
+# =========================================================
+SAMPLEGROUP NukeRumble
+	SAMPLE  nuke_rumble1
+	SAMPLE  nuke_rumble2
+	SAMPLE  nuke_rumble3
+END
+
+
+# =========================================================
+SAMPLEGROUP Music
+	SAMPLE  defconmus1a
+	SAMPLE  defconmus1b
+	SAMPLE  defconmus1c
+	SAMPLE  defconmus1d
+	SAMPLE  defconmus1e
+	SAMPLE  defconmus1f
+	SAMPLE  defconmus1g
+END
+
+
+# =========================================================
+SAMPLEGROUP bunker
+	SAMPLE  bunker1
+	SAMPLE  bunker6
+	SAMPLE  bunker7
+	SAMPLE  bunker8
+END
+
+
+# =========================================================
+SAMPLEGROUP fallout
+	SAMPLE  fallout
+	SAMPLE  fallout2
+	SAMPLE  fallout3
+	SAMPLE  fallout4
+	SAMPLE  fallout5
+	SAMPLE  fallout7
+	SAMPLE  fallout8
+	SAMPLE  fallout9
+	SAMPLE  fallout10
+	SAMPLE  fallout11
+	SAMPLE  fallout12
+	SAMPLE  fallout13
+END
+
+
+# =========================================================
+SAMPLEGROUP bunkerspot
+	SAMPLE  boots_verb
+	SAMPLE  door_closeverb
+	SAMPLE  door_openverb
+	SAMPLE  gasmask_verb
+	SAMPLE  lords_prayer
+	SAMPLE  mancough_verb
+	SAMPLE  paper_rustle_verb
+	SAMPLE  printer_verb
+	SAMPLE  radio_tuningverb
+	SAMPLE  telemetry1verb
+	SAMPLE  telemetry2verb
+	SAMPLE  telemetry3verb
+	SAMPLE  teleprinter_verb
+	SAMPLE  womancough_verb
+	SAMPLE  womancry2_verb
+END
+
+
+# =========================================================
+SAMPLEGROUP sonar
+	SAMPLE  sonarpingnew1
+	SAMPLE  sonarpingnew2
+END
+
+
+# =========================================================
+SAMPLEGROUP mouseover
+	SAMPLE  rollover1d
+	SAMPLE  rollover1e
+END
+
+
+# =========================================================
+SAMPLEGROUP text
+	SAMPLE  text1a
+	SAMPLE  text1b
+	SAMPLE  text1c
+	SAMPLE  text1d
+END
+
+
+# =========================================================
+SAMPLEGROUP objecthighlight
+	SAMPLE  hilite1
+END
+
+
+# =========================================================
+SAMPLEGROUP objectselect
+	SAMPLE  rollover1a_wet
+	SAMPLE  rollover1b_wet
+END
+
+
+# =========================================================
+SAMPLEGROUP newsamplegroup1
+END
+
+
+# =========================================================
+SAMPLEGROUP depthcharge
+	SAMPLE  depthcharge
+	SAMPLE  depthcharge2
+	SAMPLE  depthcharge3
+	SAMPLE  depthcharge4
+	SAMPLE  depthcharge5
+	SAMPLE  depthcharge6
+	SAMPLE  depthcharge7
+END
+
+
