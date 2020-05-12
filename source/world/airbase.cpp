@@ -38,6 +38,7 @@ AirBase::AirBase()
     m_maxFighters = 10;
     m_maxBombers = 10;
 
+
     AddState( LANGUAGEPHRASE("state_fighterlaunch"), 18, 20, 15, 65, true, 5, 3 );
     AddState( LANGUAGEPHRASE("state_bomberlaunch"), 120, 120, 10, 140, true, 5, 3 );
 
@@ -384,7 +385,7 @@ bool AirBase::Update()
 bool AirBase::CanLaunchBomber()
 {
     if( m_currentState == 1 &&
-        m_states[1]->m_numTimesPermitted > 0 )
+        m_states[1]->m_numTimesPermitted > 0)
     {
         return true;
     }

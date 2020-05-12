@@ -44,7 +44,7 @@ Bomber::Bomber()
     m_movementType = MovementTypeAir;
 
     AddState( LANGUAGEPHRASE("state_airtoseamissile"), 60, 30, 10, 20, true, -1, 3 );
-    AddState( LANGUAGEPHRASE("state_bombernuke"), 240, 120, 5, 25, true, 1, 1 );
+    AddState( LANGUAGEPHRASE("state_bombernuke"), 240, 120, 5, 25, true, 1, 1, true );
 
     InitialiseTimers();
 }
@@ -343,7 +343,7 @@ void Bomber::Land( int targetId )
 
 bool Bomber::UsingNukes()
 {
-    if( m_currentState == 1 )
+    if( m_currentState == 1)
     {
         return true;
     }

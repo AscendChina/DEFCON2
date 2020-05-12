@@ -109,7 +109,7 @@ public:
     virtual Fixed       GetRadarRange   ();
 
     void                AddState        ( char *stateName, Fixed prepareTime, Fixed reloadTime, Fixed radarRange, 
-                                          Fixed actionRange, bool isActionable, int numTimesPermitted = -1, int defconPermitted = 5 );
+                                          Fixed actionRange, bool isActionable, int numTimesPermitted = -1, int defconPermitted = 5, bool isAuthorizationNeeded = false);
     
     virtual bool        CanSetState     ( int state );
     virtual void        SetState        ( int state );
@@ -193,6 +193,7 @@ public:
     Fixed   m_radarRange;
     Fixed   m_actionRange;
     bool    m_isActionable;
+	bool    isAuthorizationNeeded;
 
     int     m_numTimesPermitted;            // Number of times a particular state can be used
     int     m_defconPermitted;              // The required defcon level before this state is usable

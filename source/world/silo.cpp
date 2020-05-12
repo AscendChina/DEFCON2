@@ -37,7 +37,7 @@ Silo::Silo()
 
     m_nukeSupply = 20;
 
-    AddState( LANGUAGEPHRASE("state_silonuke"), 35, 30, 10, Fixed::MAX, true, 20, 1 );         
+    AddState( LANGUAGEPHRASE("state_silonuke"), 35, 30, 10, Fixed::MAX, true, 20, 1, true );         
     AddState( LANGUAGEPHRASE("state_airdefense"), 340, 60, 10, 30, true );
 	//AddState( LANGUAGEPHRASE("state_doomsday"), 1, 1, 10, Fixed::MAX, true, 10, 1 ); 
 	AddState( LANGUAGEPHRASE("state_doomsday"), 1, 1, 10, Fixed::MAX, true, 10, 5 ); 
@@ -275,9 +275,9 @@ bool Silo::UsingGuns()
 
 bool Silo::UsingNukes()
 {
-    if( m_currentState == 0 )
+    if( m_currentState == 0)
     {
-        return true;
+        return false;
     }
     else
     {

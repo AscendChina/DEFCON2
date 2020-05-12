@@ -8,6 +8,8 @@
 #include "world/worldobject.h"
 #include "world/fighter.h"
 
+#include <ctime>
+
 #define MAX_TEAM_NAME 48
 
 class Fleet;
@@ -101,6 +103,11 @@ public:
     BoundedArray<float> m_leftAllianceTimer;    // achievement tracking only
     bool    m_alwaysSolo;
     
+	bool nuclearCodesAuthenticated;
+	bool nuclearCodesPrinted;
+	std::string challengeStr;
+	std::time_t lastChallengeCodeRequest;
+
 public:
     Team();
 

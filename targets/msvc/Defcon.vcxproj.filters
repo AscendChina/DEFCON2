@@ -505,6 +505,12 @@
       <Filter>interface\options</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\defcon.cpp" />
+    <ClCompile Include="..\..\source\interface\sha512.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\interface\nuke_authorization.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\app\app.h">
@@ -900,9 +906,6 @@
     <ClInclude Include="..\..\source\interface\mod_window.h">
       <Filter>interface</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\interface\network_window.h">
-      <Filter>interface</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\interface\placement_icon.h">
       <Filter>interface</Filter>
     </ClInclude>
@@ -974,6 +977,15 @@
     </ClInclude>
     <ClInclude Include="..\..\contrib\SystemIV\interface\options\soundoptions_window.h">
       <Filter>interface\options</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\interface\sha512.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\interface\nuke_authorization.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\interface\network_window.h">
+      <Filter>interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

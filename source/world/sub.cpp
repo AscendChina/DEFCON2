@@ -42,7 +42,7 @@ Sub::Sub()
     
     AddState( LANGUAGEPHRASE("state_passivesonar"), 240, 20, 0, 5, true, -1, 3 );
     AddState( LANGUAGEPHRASE("state_activesonar"), 20, 15, 0, 8, false, -1, 3 );
-    AddState( LANGUAGEPHRASE("state_subnuke"), 20, 10, 3, Fixed::MAX, true, 10, 1 );
+    AddState( LANGUAGEPHRASE("state_subnuke"), 20, 10, 3, Fixed::MAX, true, 10, 1, true );
 	//AddState( LANGUAGEPHRASE("state_submirv"), 10, 10, 3, Fixed::MAX, true, 5, 1 );
 	AddState( LANGUAGEPHRASE("state_submirv"), 10, 10, 3, Fixed::MAX, true, 10, 5 );
 	m_states[2]->m_numTimesPermitted = m_nukeSupply;
@@ -441,7 +441,7 @@ bool Sub::UsingGuns()
 
 bool Sub::UsingNukes()
 {
-    if( m_currentState == 2 || m_currentState == 3)
+    if(m_currentState == 2 || m_currentState == 3)
     {
         return true;
     }

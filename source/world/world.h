@@ -121,6 +121,8 @@ public:
 
     int             m_numNukesGivenToEachTeam;
 
+	
+
 public:   
     World();
 
@@ -291,7 +293,8 @@ public:
 #define CHATCHANNEL_PUBLIC      100
 #define CHATCHANNEL_ALLIANCE    101
 #define CHATCHANNEL_SPECTATORS  102
-
+#define CHATCHANNEL_PRIVATE		103
+#define CHATCHANNEL_PRIVATE_SYS 104
 
 class ChatMessage
 {

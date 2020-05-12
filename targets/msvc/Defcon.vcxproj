@@ -514,6 +514,8 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\source\interface\nuke_authorization.cpp" />
+    <ClCompile Include="..\..\source\interface\sha512.cpp" />
     <ClCompile Include="..\..\source\lib\multiline_text.cpp" />
     <ClCompile Include="..\..\contrib\SystemIV\lib\preferences.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug Steam|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -1907,6 +1909,9 @@
     <ClInclude Include="..\..\contrib\SystemIV\lib\hi_res_time.h" />
     <ClInclude Include="..\..\contrib\SystemIV\lib\language_table.h" />
     <ClInclude Include="..\..\contrib\SystemIV\lib\memory_leak.h" />
+    <ClInclude Include="..\..\source\interface\network_window.h" />
+    <ClInclude Include="..\..\source\interface\nuke_authorization.h" />
+    <ClInclude Include="..\..\source\interface\sha512.h" />
     <ClInclude Include="..\..\source\lib\multiline_text.h" />
     <ClInclude Include="..\..\contrib\SystemIV\lib\preferences.h" />
     <ClInclude Include="..\..\contrib\SystemIV\lib\profiler.h" />
@@ -2024,7 +2029,6 @@
     <ClInclude Include="..\..\source\interface\lobby_window.h" />
     <ClInclude Include="..\..\source\interface\mainmenu.h" />
     <ClInclude Include="..\..\source\interface\mod_window.h" />
-    <ClInclude Include="..\..\source\interface\network_window.h" />
     <ClInclude Include="..\..\source\interface\placement_icon.h" />
     <ClInclude Include="..\..\source\interface\profile_window.h" />
     <ClInclude Include="..\..\source\interface\resynchronise_window.h" />

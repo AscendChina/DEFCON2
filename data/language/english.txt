@@ -604,6 +604,7 @@ dialog_disconnect_unknown           Unknown
 dialog_chat_public                  Public
 dialog_chat_alliance                Alliance
 dialog_chat_spectators              Spectators
+dialog_chat_private					Private
 dialog_chat_channel_public          [public]
 dialog_chat_channel_alliance        [alliance]
 dialog_chat_channel_spectators      [spectators]
@@ -896,6 +897,7 @@ tooltip_lobby_address_port                  IP: *I\nPORT:*P
 tooltip_chat_public                         Public channel. All players can see messages here
 tooltip_chat_alliance                       Alliance channel. Only members of your Alliance can see messages here
 tooltip_chat_spectators                     Spectators channel. Spectators are only permitted to post in here.
+tooltip_chat_private						Private messages.
 
 tooltip_alliance_join                       Send a request to join this alliance
 tooltip_alliance_leave                      Leave this Alliance

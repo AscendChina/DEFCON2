@@ -78,6 +78,12 @@ Team::Team()
     SetTeamName( "[name-not-set]" );
     
     //m_aiAssaultTimer = 600;
+
+	nuclearCodesAuthenticated = false;
+	nuclearCodesPrinted = false;
+	challengeStr="";
+	std::time(&lastChallengeCodeRequest);
+	lastChallengeCodeRequest = lastChallengeCodeRequest - (60 * 5);//decrease for 5 minutes
 }
 
 void Team::SetTeamType( int type )

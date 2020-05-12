@@ -1,9 +1,9 @@
-ScreenWidth = 1920
-ScreenHeight = 1080
-ScreenWindowed = 0
-ScreenColourDepth = 32
+ScreenWidth = 854
+ScreenHeight = 480
+ScreenWindowed = 1
+ScreenColourDepth = 16
 ScreenRefresh = 60
-ScreenZDepth = 24
+ScreenZDepth = 16
  
 SoundLibrary = dsound
 SoundMixFreq = 22050
@@ -52,8 +52,9 @@ RenderNodes = 0
 AmbxEnabled = 0
  
 ScreenAntiAliasing = 0
-WindowUnitCreation = 0.100.100.400
-WindowScores = 1750.0.170.163
-WindowToolbar = 1283.1015.637.65
-WindowWorldStatus = 750.0.420.25
+WindowUnitCreation = -3.68.100.400
+WindowScores = 684.0.170.150
+WindowToolbar = 196.407.637.65
+WindowWorldStatus = 130.6.420.25
+WindowWhiteBoardPanel = 774.155.80.187
 InnoSetupLanguage = 

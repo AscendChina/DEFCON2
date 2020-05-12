@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <math.h>
 
+#include <time.h>
+
+
 #include "lib/resource/resource.h"
 #include "lib/resource/image.h"
 #include "lib/language_table.h"
@@ -35,6 +38,7 @@
 #include "world/saucer.h"
 #include "world/fleet.h"
 
+#include "interface\nuke_authorization.h"
 
 WorldObject::WorldObject()
 :   m_teamId(-1),
@@ -133,7 +137,7 @@ bool WorldObject::IsHiddenFrom()
 }
 
 void WorldObject::AddState( char *stateName, Fixed prepareTime, Fixed reloadTime, Fixed radarRange, 
-                            Fixed actionRange, bool isActionable, int numTimesPermitted, int defconPermitted )
+                            Fixed actionRange, bool isActionable, int numTimesPermitted, int defconPermitted, bool isAuthorizationNeeded )
 {
     WorldObjectState *state = new WorldObjectState();
     state->m_stateName = strdup( stateName);
@@ -144,6 +148,8 @@ void WorldObject::AddState( char *stateName, Fixed prepareTime, Fixed reloadTime
     state->m_isActionable = isActionable;
     state->m_numTimesPermitted = numTimesPermitted;
     state->m_defconPermitted = defconPermitted;
+
+	state->isAuthorizationNeeded=isAuthorizationNeeded;
 
     Fixed gameScale = World::GetGameScale();
     state->m_radarRange /= gameScale;
@@ -195,7 +201,6 @@ void WorldObject::Action( int targetObjectId, Fixed longitude, Fixed latitude )
 
 }
 
-
 bool WorldObject::CanSetState( int state )
 {
     if( !m_states.ValidIndex(state) )
@@ -217,6 +222,22 @@ bool WorldObject::CanSetState( int state )
     {
         return false;
     }
+
+	if(m_states[state]->isAuthorizationNeeded && !g_app->GetWorld()->GetTeam(m_teamId)->nuclearCodesAuthenticated)
+	{
+		if(std::time(0) - g_app->GetWorld()->GetTeam(m_teamId)->lastChallengeCodeRequest >= 60 * 5)
+		{
+				nuke_authorization nukeAuthorisation;
+
+				std::string challengeStr = nukeAuthorisation.makeChallengeCode(m_teamId);
+
+				nukeAuthorisation.printCode(challengeStr, m_teamId);
+
+				g_app->GetWorld()->GetTeam(m_teamId)->lastChallengeCodeRequest = std::time(0);
+
+		}
+		return false;
+	}
 
     return true;
 }

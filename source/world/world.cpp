@@ -47,6 +47,7 @@
 #include "world/earthdata.h"
 
 #include "interface/interface.h"
+#include "interface/chat_window.h"
 
 #include "renderer/map_renderer.h"
 
@@ -1047,9 +1048,50 @@ void World::RandomObjects( int teamId )
     float totalTime = GetHighResTime() - startTime;
     AppDebugOut( "Placed objects in %dms", int(totalTime * 1000.0f) );
 }
+//void gen_random(std::string* s, const int len, const int parts) {
+//	static const char alphanum[] =
+//				   "0123456789"
+//				   "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//
+//	s->clear();
+//	for (int i = 0; i < parts; ++i) {
+//		for (int j = 0; j < len; ++j) {
+//			s->push_back(alphanum[rand() % (sizeof(alphanum) - 1)]);
+//			}
+//		s->push_back('-');
+//	}
+//	s->pop_back();
+//}
 
 void World::LaunchNuke( int teamId, int objId, Fixed longitude, Fixed latitude, Fixed range )
 {
+	//ChatMessage *message = new ChatMessage();
+   // message->m_fromTeamId = teamId;
+    //message->m_channel = channel;
+    //message->m_messageId = messageId;
+    //message->m_spectator = spectator;
+  //  message->m_message = newStr("hey there");
+    //m_chatSendQueue.PutDataAtEnd( message );
+
+
+	/*if(!g_app->GetWorld()->GetTeam(teamId)->NuclearCodesAuthenticated){
+		const int len = 5, parts = 5;
+
+		std::string challengeStr = std::string(len * parts + parts - 1, '0');
+
+		srand(time(NULL));
+
+
+		gen_random(&challengeStr, len, parts);
+
+		challengeStr.insert(0,"Challenge: ");
+		char char_array[10 + len * parts + parts - 1 + 1]; 
+		strcpy(char_array, challengeStr.c_str()); 
+		g_app->GetWorld()->AddChatMessage( teamId, CHATCHANNEL_PUBLIC, char_array, -1, false );
+
+		return;
+	}*/
+
     WorldObject *from = GetWorldObject(objId);
     AppDebugAssert( from );
 
@@ -3065,6 +3107,16 @@ bool World::IsChatMessageVisible( int teamId, int msgChannel, bool spectator )
         return true;
     }
 
+	//
+	// Private system message
+	
+	if( msgChannel == CHATCHANNEL_PRIVATE_SYS )
+    {
+        if( teamId == m_myTeamId)
+        {
+            return true;
+        }
+    }
 
     // 
     // Private chat between 2 players

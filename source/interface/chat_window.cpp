@@ -16,8 +16,12 @@
 #include "app/globals.h"
 #include "lib/multiline_text.h"
 
+#include <ctime>
+#include "sha512.h"
+
 #include "world/world.h"
 
+#include "interface\nuke_authorization.h"
 
 class SetChannelButton : public InterfaceButton
 {
@@ -102,6 +106,12 @@ void ChatWindow::Create()
 
     buttonX += 85;
 
+	channel = new SetChannelButton();
+    channel->SetProperties( "Channel 103", buttonX, 3, 80, 15, "dialog_chat_private", "tooltip_chat_private", true, true );
+    channel->m_channel = CHATCHANNEL_PRIVATE;
+    RegisterButton( channel );
+
+    buttonX += 85;
 
     int windowSize = invert->m_h;
 
@@ -132,7 +142,8 @@ void ChatWindow::Update()
     {
         if( GetButton( "Channel 100" ) ) RemoveButton( "Channel 100" );
         if( GetButton( "Channel 101" ) ) RemoveButton( "Channel 101" );
-        
+        if( GetButton( "Channel 103" ) ) RemoveButton( "Channel 103" );
+
         if( !GetButton( "Channel 102" ) )
         {
             SetChannelButton *channel = new SetChannelButton();
@@ -163,6 +174,15 @@ void ChatWindow::Update()
             channel->m_channel = CHATCHANNEL_ALLIANCE;
             RegisterButton( channel );
             m_channel = CHATCHANNEL_PUBLIC;
+        }
+
+		if( !GetButton( "Channel 103" ) )
+        {
+            SetChannelButton *channel = new SetChannelButton();
+            channel->SetProperties( "Channel 103", 175, 3, 80, 15, "dialog_chat_private", "tooltip_chat_private", true, true );
+            channel->m_channel = CHATCHANNEL_PRIVATE;
+            RegisterButton( channel );
+            m_channel = CHATCHANNEL_PRIVATE;
         }
     }
 
@@ -587,6 +607,10 @@ char *ChatWindow::GetChannelName( int _channelId, bool _includePublic )
     {
         sprintf( channelName, LANGUAGEPHRASE("dialog_chat_channel_spectators") );
     }
+	 else if( _channelId == CHATCHANNEL_PRIVATE )
+    {
+        sprintf( channelName, LANGUAGEPHRASE("dialog_chat_channel_private") );
+    }
     else if( _channelId == g_app->GetWorld()->m_myTeamId )
     {
         sprintf( channelName, LANGUAGEPHRASE("dialog_chat_channel_private") );
@@ -682,8 +706,21 @@ void ChatInputField::Keypress( int keyCode, bool shift, bool ctrl, bool alt, uns
             int specIndex = g_app->GetWorld()->IsSpectating( clientId );
             if( specIndex != -1 ) myTeamId = clientId;
             
-            //
-            // Parse special commands
+       
+
+			if( strncmp(msg, "/code ", 6) == 0 )
+            {
+				nuke_authorization nukeAuthorization;
+				if (nukeAuthorization.challenge(std::string (msg+6),myTeamId)) 
+				{
+					g_app->GetWorld()->AddChatMessage( myTeamId, CHATCHANNEL_PRIVATE_SYS, "Successful Authorization!", -1, false );
+				}
+				else 
+				{
+					g_app->GetWorld()->AddChatMessage( myTeamId, CHATCHANNEL_PRIVATE_SYS, "Unsuccessful Authorization!", -1, false );
+				}
+			}
+
 
             if( strncmp(msg, "/name ", 6) == 0 )
             {

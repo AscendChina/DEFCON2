@@ -1,0 +1,23 @@
+Defcon 1.6 built May 12 2020
+Parsing archive main.dat...NOT FOUND
+Found language 'english' with caption 'English' in 'data/language/english.txt'
+Found language 'french' with caption 'Français' in 'data/language/french.txt'
+Found language 'german' with caption 'Deutsch' in 'data/language/german.txt'
+Found language 'italian' with caption 'Italiano' in 'data/language/italian.txt'
+Found language 'spanish' with caption 'Español' in 'data/language/spanish.txt'
+WinSock started
+Client listening on port 5011
+Parsing Coastline data (1776 islands) : 33ms
+Parsing International data (2753 islands) : 14ms
+Parsing City data (2745 cities) : 20ms
+Parsing archive sounds.dat...DONE
+Authentication key set : 'SABDMM-QWALZV-LJASSN-MBCFPE-GLE'
+WinSock started
+Host address resolution failed for metaserver.introversion.co.uk (No such host is known. )
+Connection established to MetaServer on port 5008. Listening on Port 5009
+NetSocketSession::WriteData invalid socket
+Requesting data from MetaServer : LatestVersion
+NetSocketSession::WriteData invalid socket
+Requesting data from MetaServer : MOTD
+CLIENT : Disconnected
+Disconnected from MetaServer
